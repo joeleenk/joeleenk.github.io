@@ -1,0 +1,14 @@
+/* Extends and mixins go here */
+
+/* Create extendable styles for a flex-styled list, horizontal by default. */
+%flex-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+
+  li {
+    display: unset;
+    margin: 0.6rem 0;
+    padding: 1rem;
+  }
+}

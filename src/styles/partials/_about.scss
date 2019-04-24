@@ -1,0 +1,10 @@
+/* Styles specific to the about section */
+
+.things-I-love {
+  @extend %flex-list;
+  flex-wrap: wrap;
+
+  li {
+    background: #efefef;
+  }
+}

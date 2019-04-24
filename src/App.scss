@@ -1,0 +1,14 @@
+/* 
+Main sass file importing files from styles folder.
+*/
+
+/* Import from modules (colors, extends, mixins) */
+@import "./styles/modules/colors";
+@import "./styles/modules/utility";
+
+/* Import from partials (styles seperated by type/section) */
+@import "./styles/partials/elements";
+@import "./styles/partials/layout";
+@import "./styles/partials/header";
+@import "./styles/partials/about";
+@import "./styles/partials/classes";
