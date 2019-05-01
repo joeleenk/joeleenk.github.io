@@ -1,4 +1,5 @@
 import React from "react";
+import FavoriteColors from "./Colors";
 
 const About = () => (
   <section id="about" className="about">
@@ -25,7 +26,7 @@ const About = () => (
     </section>
     <section className="passions">
       <h3>
-        Things I <span class="large">&hearts;</span>
+        Things I <span className="large">&hearts;</span>
       </h3>
       <ul className="things-I-love">
         <li>WordPress</li>
@@ -51,6 +52,7 @@ const About = () => (
         I don't have a favorite color. I do have a favorite shade of each color
         though!
       </p>
+      <FavoriteColors />
     </aside>
   </section>
 );

@@ -1,3 +1,24 @@
 /* Define application colors here */
 
 $light: white;
+$dark: black;
+
+// Colors
+$colors: (
+  pink: #ff1e65,
+  red: #ad0a1a,
+  orange: #fb7d00,
+  yellow: #ffc61e,
+  green: #97ff7a,
+  blue: #7096ff,
+  indigo: #060351,
+  violet: #45149b,
+  purple: #c19eff
+);
+
+// Export colors list for React
+:export {
+  @each $key, $val in $colors {
+    #{$key}: #{$val};
+  }
+}

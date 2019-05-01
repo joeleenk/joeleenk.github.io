@@ -3,12 +3,33 @@
 /* Create extendable styles for a flex-styled list, horizontal by default. */
 %flex-list {
   display: flex;
-  justify-content: space-between;
+  margin: 1rem -0.5rem;
   padding: 0;
 
   li {
     display: unset;
-    margin: 0.6rem 0;
-    padding: 1rem;
+    flex: 1 1 auto;
+    margin: 0.5rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+}
+
+/* Helper function for colors list */
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}
+
+/* Helper function to test the darkness of a background color */
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return $dark; // Lighter backgorund, return dark color
+  } @else {
+    @return $light; // Darker background, return light color
   }
 }
