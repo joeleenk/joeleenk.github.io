@@ -7,7 +7,7 @@ const MainNav = () => (
         <a href="#about">About Me</a>
       </li>
       <li>
-        <a href="#case-studies">Case Studies</a>
+        <a href="#work">My Work</a>
       </li>
       <li>
         <a href="#resume">Resume</a>
