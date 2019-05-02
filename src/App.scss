@@ -12,3 +12,6 @@ Main sass file importing files from styles folder.
 @import "./styles/partials/header";
 @import "./styles/partials/about";
 @import "./styles/partials/classes";
+
+/* Print styles */
+@import "./styles/partials/print";

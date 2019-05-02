@@ -12,6 +12,10 @@
     margin: 0.5rem;
     padding: 0 1rem;
     text-align: center;
+
+    &.print-only {
+      display: none;
+    }
   }
 }
 
@@ -32,4 +36,9 @@
   } @else {
     @return $light; // Darker background, return light color
   }
+}
+
+/* Clean up box-shadows */
+@mixin inset-box-shadow($color: #000000) {
+  box-shadow: inset 0 0 15px 0 rgba(darken($color, 10%), 0.5);
 }

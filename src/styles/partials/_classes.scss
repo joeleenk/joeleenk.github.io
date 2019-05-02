@@ -6,10 +6,38 @@
   vertical-align: sub;
 }
 
+.print-only {
+  display: none;
+}
+
+.print-resume {
+  @extend %flex-list;
+  flex-direction: column;
+
+  button {
+    background-color: color(orange);
+    border: 0 none;
+    border-radius: 2.25rem;
+    @include inset-box-shadow(color(orange));
+    color: $light;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1.25rem 1.75rem;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+
+    &:hover {
+      background-color: color(pink);
+      @include inset-box-shadow(color(pink));
+    }
+  }
+}
+
 @each $key, $val in $colors {
   .#{$key} {
     background-color: $val;
-    box-shadow: inset 0 0 15px 0 rgba(darken($val, 10%), 0.5);
+    @include inset-box-shadow($val);
     color: set-text-color($val);
   }
 }

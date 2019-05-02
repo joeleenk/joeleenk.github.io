@@ -12,6 +12,7 @@
 
   h1 {
     margin-bottom: 0;
+    margin-top: auto;
     + p {
       margin-top: 0.5rem;
     }
@@ -22,8 +23,44 @@
   }
 }
 
+.contact-me {
+  @extend %flex-list;
+  font-size: 1.25rem;
+  margin-bottom: auto;
+
+  li {
+    align-items: center;
+    display: flex;
+
+    &:after {
+      content: "\25C8";
+      font-size: 50%;
+      margin: 0 -1.5rem 0 1.5rem;
+    }
+
+    &:last-child:after {
+      display: none;
+    }
+  }
+}
+
 .app-main-nav {
   ul {
     @extend %flex-list;
+
+    li {
+      align-items: center;
+      display: flex;
+
+      &:after {
+        content: "|";
+        font-size: 50%;
+        margin: 0 -1.5rem 0 1.5rem;
+      }
+
+      &:last-child:after {
+        display: none;
+      }
+    }
   }
 }

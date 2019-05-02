@@ -1,0 +1,22 @@
+/* Print styles for resume */
+@media print {
+  #root {
+    .print-only {
+      display: inherit;
+    }
+
+    .app-main-nav,
+    .about h2,
+    .about h3,
+    .background,
+    .passions,
+    .fun-fact,
+    .print-resume {
+      display: none;
+    }
+
+    .app-header {
+      min-height: 0;
+    }
+  }
+}

@@ -1,9 +1,11 @@
 import React from "react";
 import About from "./About";
+import Resume from "./Resume";
 
 const Content = () => (
-  <section className="app-content">
+  <main role="main" className="app-content">
     <About />
-  </section>
+    <Resume />
+  </main>
 );
 export default Content;

@@ -7,7 +7,7 @@ const About = () => (
     <section className="mission">
       <h3>Professional mission</h3>
       <p>
-        To combine my passion for user experience design and accessibility with
+        I combine my passion for user experience design and accessibility with
         my development skills to make the web more beautiful, usable and
         inclusive.
       </p>
@@ -46,7 +46,7 @@ const About = () => (
         <li>Equity, social justice and equal rights</li>
       </ul>
     </section>
-    <aside>
+    <aside className="fun-fact">
       <h3>Fun fact</h3>
       <p>
         I don't have a favorite color. I do have a favorite shade of each color
