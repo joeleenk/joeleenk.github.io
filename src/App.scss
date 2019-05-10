@@ -3,6 +3,7 @@ Main sass file importing files from styles folder.
 */
 
 /* Import from modules (colors, extends, mixins) */
+@import "./styles/modules/variables";
 @import "./styles/modules/colors";
 @import "./styles/modules/utility";
 

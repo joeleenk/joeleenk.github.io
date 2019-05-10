@@ -2,8 +2,12 @@
 
 .large {
   font-size: 165%;
-  line-height: 0;
-  vertical-align: sub;
+
+  &.symbol {
+    font-family: $default_font;
+    line-height: 0;
+    vertical-align: sub;
+  }
 }
 
 .print-only {
@@ -27,7 +31,8 @@
     text-transform: uppercase;
     transition: all 300ms ease;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: color(pink);
       @include inset-box-shadow(color(pink));
     }

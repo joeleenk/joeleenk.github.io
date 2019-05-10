@@ -3,6 +3,7 @@
 /* Create extendable styles for a flex-styled list, horizontal by default. */
 %flex-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 1rem -0.5rem;
   padding: 0;
 
@@ -10,12 +11,25 @@
     display: unset;
     flex: 1 1 auto;
     margin: 0.5rem;
-    padding: 0 1rem;
+    padding: 0 2vmin;
     text-align: center;
 
     &.print-only {
       display: none;
     }
+  }
+}
+
+/* Create extendable styles for a small border above an element. */
+%border-above {
+  margin-top: calc(1rem + 3vmin);
+
+  &:before {
+    border-top: 1px solid $light;
+    content: "";
+    display: block;
+    margin: 0 auto calc(1rem + 3vmin);
+    width: 2rem;
   }
 }
 

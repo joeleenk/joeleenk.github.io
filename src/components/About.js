@@ -26,7 +26,7 @@ const About = () => (
     </section>
     <section className="passions">
       <h3>
-        Things I <span className="large">&hearts;</span>
+        Things I <span className="large symbol">&hearts;</span>
       </h3>
       <ul className="things-I-love">
         <li>WordPress</li>

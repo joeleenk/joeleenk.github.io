@@ -2,7 +2,6 @@
 
 .things-I-love {
   @extend %flex-list;
-  flex-wrap: wrap;
 
   li {
     background: #efefef;
@@ -12,7 +11,6 @@
 
 .favorite-colors {
   @extend %flex-list;
-  flex-wrap: wrap;
 
   li {
     padding: 1.5rem 2rem;
