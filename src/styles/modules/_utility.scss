@@ -21,15 +21,36 @@
 }
 
 /* Create extendable styles for a small border above an element. */
-%border-above {
+@mixin border-above($color: $dark) {
   margin-top: calc(1rem + 3vmin);
 
   &:before {
-    border-top: 1px solid $light;
+    border-top: 1px solid $color;
     content: "";
     display: block;
     margin: 0 auto calc(1rem + 3vmin);
     width: 2rem;
+
+    @media (min-width: 768px) {
+      border-top: 0.45vmin dotted $color;
+    }
+  }
+}
+
+/* Create extendable styles for a small border below an element. */
+@mixin border-below($color: $dark) {
+  margin-bottom: calc(1rem + 3vmin);
+
+  &:after {
+    border-top: 1px solid $color;
+    content: "";
+    display: block;
+    margin: calc(1rem + 3vmin) auto 0;
+    width: 2rem;
+
+    @media (min-width: 768px) {
+      border-top: 0.45vmin dotted $color;
+    }
   }
 }
 
@@ -53,6 +74,6 @@
 }
 
 /* Clean up box-shadows */
-@mixin inset-box-shadow($color: #000000) {
+@mixin inset-box-shadow($color: $dark0) {
   box-shadow: inset 0 0 15px 0 rgba(darken($color, 10%), 0.5);
 }

@@ -5,6 +5,11 @@ body {
   line-height: 1.4;
 }
 
+h2 {
+  @include border-below;
+  text-align: center;
+}
+
 a {
   text-decoration: none;
 

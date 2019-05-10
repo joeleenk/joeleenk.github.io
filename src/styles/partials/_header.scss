@@ -23,13 +23,7 @@
     }
     + p {
       margin-bottom: 0;
-      @extend %border-above;
-
-      @media (min-width: 768px) {
-        &:before {
-          border-top: 0.45vmin dotted $light;
-        }
-      }
+      @include border-above($light);
     }
   }
 
@@ -42,7 +36,7 @@
   @extend %flex-list;
   flex-direction: column;
   margin-bottom: auto;
-  @extend %border-above;
+  @include border-above($light);
 
   @media (min-width: 768px) {
     flex-direction: row;
