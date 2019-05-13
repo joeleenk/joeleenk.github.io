@@ -2,9 +2,7 @@
 
 .mission,
 .background {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 650px;
+  @extend %narrow-section;
 }
 
 .passions {
