@@ -11,10 +11,19 @@ h2 {
 }
 
 a {
+  color: color(orange);
   text-decoration: none;
+  transition: all 300ms ease;
 
   &:hover,
   &:focus {
+    color: color(pink);
     text-decoration: underline;
   }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 1em auto;
 }

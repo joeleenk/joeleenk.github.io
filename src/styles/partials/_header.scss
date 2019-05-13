@@ -29,6 +29,11 @@
 
   a {
     color: $light;
+    padding: 0.2em;
+
+    &:focus {
+      outline-color: $light;
+    }
   }
 }
 
