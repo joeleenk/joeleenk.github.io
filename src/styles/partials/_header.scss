@@ -49,6 +49,12 @@
 .app-main-nav {
   ul {
     @extend %flex-list;
+    justify-content: center;
+    max-width: 300px;
+
+    @media (min-width: 550px) {
+      max-width: unset;
+    }
 
     li {
       align-items: center;
@@ -57,15 +63,20 @@
       margin: 0;
       padding: 0;
 
-      @media (min-width: 600px) {
-        &:after {
-          content: "|";
-          font-size: 50%;
-          margin: 0 3vmin;
-        }
+      &:after {
+        content: "|";
+        font-size: 50%;
+        margin: 0 3vmin;
+      }
 
-        &:last-child:after {
-          display: none;
+      &:nth-child(2):after,
+      &:last-child:after {
+        display: none;
+      }
+
+      @media (min-width: 550px) {
+        &:nth-child(2):after {
+          display: block;
         }
       }
     }
