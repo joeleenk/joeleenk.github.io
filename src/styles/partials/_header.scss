@@ -9,6 +9,7 @@
   font-size: 120%;
   justify-content: center;
   min-height: 100vh;
+  padding: 0 5%;
   text-align: center;
 
   h1 {
@@ -22,52 +23,25 @@
       font-weight: 400;
     }
     + p {
-      margin-bottom: 0;
       @include border-above($light);
+    }
+  }
+
+  p {
+    @extend %narrow-section;
+    max-width: 800px;
+
+    &:last-of-type {
+      margin-bottom: auto;
     }
   }
 
   a {
     color: $light;
-    padding: 0.2em;
+    padding: 0.2rem 0.4rem;
 
     &:focus {
       outline-color: $light;
-    }
-  }
-}
-
-.contact-me {
-  @extend %flex-list;
-  flex-direction: column;
-  margin-bottom: auto;
-  @include border-above($light);
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-    font-size: 80%;
-    margin-top: 0;
-
-    &:before {
-      border: 0 none;
-    }
-  }
-
-  li {
-    margin: 0 0 0.5rem;
-
-    @media (min-width: 768px) {
-      margin: 0.5rem 0 0;
-
-      &:after {
-        content: "\2022";
-        font-size: 110%;
-        margin: 0 -1rem 0 1rem;
-      }
-
-      &:last-child:after {
-        display: none;
-      }
     }
   }
 }
@@ -79,16 +53,20 @@
     li {
       align-items: center;
       display: flex;
+      flex: 0 0 auto;
       margin: 0;
+      padding: 0;
 
-      &:after {
-        content: "|";
-        font-size: 50%;
-        margin: 0 0 0 4vmin;
-      }
+      @media (min-width: 600px) {
+        &:after {
+          content: "|";
+          font-size: 50%;
+          margin: 0 3vmin;
+        }
 
-      &:last-child:after {
-        display: none;
+        &:last-child:after {
+          display: none;
+        }
       }
     }
   }

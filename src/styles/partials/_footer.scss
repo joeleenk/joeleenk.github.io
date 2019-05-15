@@ -1,0 +1,57 @@
+/* Styles for the app header */
+
+.app-footer {
+  background-color: color(indigo);
+  color: $light;
+  padding: 5%;
+
+  h2 {
+    font-size: 90%;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  a {
+    color: $light;
+    padding: 0.2rem 0.5rem;
+
+    &:focus {
+      outline-color: $light;
+    }
+  }
+}
+
+.contact-me {
+  @extend %flex-list;
+  flex-direction: column;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    font-size: 80%;
+    justify-content: center;
+  }
+
+  li {
+    flex: 0 0 auto;
+    margin: 0 0 0.5rem;
+
+    @media (min-width: 768px) {
+      margin: 0.5rem 0 0;
+
+      &:after {
+        content: "\2022";
+        font-size: 110%;
+        margin: 0 -1rem 0 1rem;
+      }
+
+      &:last-child:after {
+        display: none;
+      }
+    }
+  }
+}
