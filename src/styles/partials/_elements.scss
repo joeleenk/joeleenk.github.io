@@ -20,6 +20,11 @@ a {
     color: color(pink);
     text-decoration: underline;
   }
+
+  &:focus {
+    outline-color: color(pink);
+    outline-offset: 0.4rem;
+  }
 }
 
 img {
@@ -45,6 +50,11 @@ button {
   &:focus {
     background-color: color(pink);
     @include inset-box-shadow(color(pink));
+  }
+
+  &:focus {
+    outline-color: color(pink);
+    outline-offset: 0.5rem;
   }
 }
 

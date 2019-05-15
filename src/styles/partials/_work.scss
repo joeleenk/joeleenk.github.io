@@ -15,5 +15,9 @@
     &:focus {
       color: color(violet);
     }
+
+    &:focus {
+      outline-color: color(violet);
+    }
   }
 }
