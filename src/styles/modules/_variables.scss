@@ -1,6 +1,19 @@
 /* Define variables here */
 
-$default_font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-$base_font: "Raleway", sans-serif;
-$fancy_font: "Raleway Dots", sans-serif;
+@font-face {
+  font-family: 'Rouge Script';
+  src: url('fonts/Rouge_Script/RougeScript-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Varta';
+  src: url('fonts/Varta/Varta-VariableFont_wght.woff2') format('woff2-variations');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$default_font: system-ui, -apple-system;
+$base_font: "Varta", sans-serif;
+$fancy_font: "Rouge Script", sans-serif;

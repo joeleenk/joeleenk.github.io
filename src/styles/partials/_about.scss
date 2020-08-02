@@ -9,10 +9,6 @@
   background-color: rgba($dark, 0.05);
   margin: 5% -5.55%;
   padding: 5%;
-
-  h3 {
-    text-align: center;
-  }
 }
 
 .things-I-love {
@@ -20,24 +16,35 @@
 
   li {
     background-color: rgba($dark, 0.05);
+    border-radius: 1rem;
     padding: 2rem 1.5rem;
   }
 }
 
 .fun-fact {
-  h3,
-  p {
-    text-align: center;
-  }
+  text-align: center;
 }
 
 .favorite-colors {
   @extend %flex-list;
+  justify-content: center;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 640px) {
+    max-width: 640px;
+  }
 
   li {
-    flex-basis: 8%;
+    border-radius: 50% 0;
+    flex: 0 1 8%;
     padding: 1.5rem 2rem;
     width: 50%;
+
+    &:nth-of-type(odd) {
+      border-radius: 0 50%;
+    }
 
     &:hover {
       h4,

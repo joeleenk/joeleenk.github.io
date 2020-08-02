@@ -1,6 +1,7 @@
 /* Styles specific to the work section */
 .work {
-  background-color: lighten(color(orange), 30%);
+  background-color: scale-color(color(orange), $lightness: 60%);
+  background-image: url("images/noise-texture.png");
 
   h2,
   h3,

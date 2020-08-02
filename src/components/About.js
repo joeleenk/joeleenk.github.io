@@ -39,7 +39,8 @@ const About = () => (
         <li>Typography</li>
         <li>Handmade art</li>
         <li>Small/local businesses</li>
-        <li>Decaf tea &amp; coffee</li>
+        <li>Tea</li>
+        <li>Decaf coffee</li>
         <li>Dark chocolate</li>
         <li>Audio books</li>
         <li>Feminism</li>

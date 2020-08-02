@@ -18,8 +18,7 @@
   }
 
   h3 {
-    @include border-above;
-    text-align: center;
+    @include dotted-border($dark, before);
   }
 }
 
