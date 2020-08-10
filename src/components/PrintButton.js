@@ -1,11 +1,10 @@
 import React from "react";
 
-var PrintButton = () => ({
-  render() {
-    return <button onClick={this._onClick}>Print this section</button>;
-  },
-  _onClick() {
-    window.print();
-  }
-});
+const printHandler = () => {
+  window.print();
+}
+
+const PrintButton = () => (
+  <button onClick={printHandler}>Print this section</button>
+);
 export default PrintButton;
