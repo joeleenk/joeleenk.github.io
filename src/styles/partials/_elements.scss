@@ -1,9 +1,12 @@
 /* Basic content level html elements go here */
 body {
-  background-image: url("images/noise-texture.png");
   font-family: $base_font;
   font-size: calc(10px + 1.5vmin);
   line-height: 1.4;
+
+  @media screen {
+    background-image: url("../../images/noise-texture.png");
+  }
 }
 
 h2 {
