@@ -1,23 +1,137 @@
 /* Print styles for resume */
 @media print {
   #root {
+    font-size: 80%;
+
     .print-only {
       display: inherit;
     }
 
     .app-main-nav,
+    h2:after,
     .about h2,
     .about h3,
     .background,
     .passions,
     .fun-fact,
     .work,
-    .print-resume {
+    .resume h2,
+    .print-resume,
+    .app-footer h2 {
       display: none;
     }
 
+    h3 {
+      margin: 2% 0;
+
+      &::before {
+        margin: 2% auto;
+      }
+    }
+
+    a:hover,
+    a:focus {
+      color: inherit;
+      outline: none;
+      text-decoration: none;
+    }
+
     .app-header {
+      border-bottom: 6px solid rgba($dark, 0.3);
       min-height: 0;
+      padding: 2% 0;
+      text-align: left;
+
+      h1 {
+        display: flex;
+        flex: 0 0 38%;
+        font-size: 160%;
+        line-height: 1;
+        margin: 0;
+        padding: 0.5% 0 0 0;
+
+        &:after {
+          border-right: 1px solid rgba($dark, 0.3);
+          content: "";
+          display: block;
+          margin: -1% auto 0;
+        }
+
+        + p:before {
+          display: none;
+        }
+      }
+
+      p {
+        flex: 0 0 62%;
+        font-size: 83%;
+        margin: 0;
+      }
+    }
+
+    main {
+      padding: 2% 0;
+
+      > section {
+        padding: 0;
+      }
+    }
+
+    .resume {
+      > section {
+        max-width: none;
+      }
+
+      .job {
+        display: flex;
+        flex-wrap: wrap;
+        grid-column-gap: 0;
+        margin: 0;
+        padding: 1em 0;
+
+        &:first-of-type {
+          padding-top: 0;
+        }
+
+        &:last-of-type {
+          padding-bottom: 0;
+        }
+
+        &--left {
+          flex: 0 0 35%;
+          margin-right: 3%;
+        }
+
+        &--right {
+          flex: 0 0 62%;
+
+          &:not(:last-of-type) {
+            margin-bottom: 1.3rem;
+          }
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+
+    .app-footer {
+      border-top: 6px solid rgba($dark, 0.3);
+      font-size: 83%;
+      padding: 2% 0;
+
+      a {
+        color: $dark;
+      }
+    }
+
+    .contact-me {
+      li:after {
+        color: rgba($dark, 0.7);
+        font-size: 170%;
+        line-height: 1;
+      }
     }
   }
 }

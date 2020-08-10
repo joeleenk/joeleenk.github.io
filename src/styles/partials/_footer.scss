@@ -1,10 +1,12 @@
 /* Styles for the app header */
 
 .app-footer {
-  background-color: color(indigo);
-  background-image: url("../../images/noise-texture.png");
-  color: $light;
-  padding: 5%;
+  @media screen {
+    background-color: color(indigo);
+    background-image: url("../../images/noise-texture.png");
+    color: $light;
+    padding: 5%;
+  }
 
   h2 {
     font-size: 130%;
@@ -28,19 +30,23 @@
 
 .contact-me {
   @extend %flex-list;
-  flex-direction: column;
   margin: 0;
 
-  @media (min-width: 768px) {
+  @media screen {
+    flex-direction: column;
+  }
+
+  @media print, (min-width: 768px) {
+    align-items: baseline;
     flex-direction: row;
     justify-content: center;
   }
 
   li {
-    flex: 0 0 auto;
+    flex: 0 1 auto;
     margin: 0 0 0.5rem;
 
-    @media (min-width: 768px) {
+    @media print, (min-width: 768px) {
       margin: 0.5rem 0 0;
 
       &:after {
