@@ -49,8 +49,8 @@
 }
 
 /* Clean up box-shadows */
-@mixin inset-box-shadow($color: $dark0) {
-  box-shadow: inset 0 0 15px 0 rgba(darken($color, 10%), 0.5);
+@mixin inset-box-shadow($color: $dark) {
+  box-shadow: inset 0 0 15px 0 rgba(scale-color($color, $lightness: -18%), 0.5);
 }
 
 /* Create extendable styles for a small border above/below an element. */

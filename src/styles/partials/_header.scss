@@ -9,7 +9,7 @@
   text-align: center;
 
   @media screen {
-    background-color: color(pink);
+    background-color: color('pink');
     background-image: url("../../images/noise-texture.png");
     color: $light;
     flex-direction: column;
@@ -24,7 +24,7 @@
       line-height: 0.75;
       margin: auto 0 1vmin;
       opacity: 0.7;
-      text-shadow: 0.5vmin 0.5vmin 0.5vmin scale-color(color(pink), $lightness: -40%);
+      text-shadow: 0.5vmin 0.5vmin 0.5vmin scale-color(color('pink'), $lightness: -40%);
 
       + p {
         margin-top: 0;

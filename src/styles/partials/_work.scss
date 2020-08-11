@@ -1,6 +1,6 @@
 /* Styles specific to the work section */
 .work {
-  background-color: scale-color(color(orange), $lightness: 60%);
+  background-color: scale-color(color('orange'), $lightness: 60%);
   background-image: url("../../images/noise-texture.png");
 
   h2,
@@ -10,15 +10,15 @@
   }
 
   a {
-    color: color(red);
+    color: color('red');
 
     &:hover,
     &:focus {
-      color: color(violet);
+      color: color('violet');
     }
 
     &:focus {
-      outline-color: color(violet);
+      outline-color: color('violet');
     }
   }
 }

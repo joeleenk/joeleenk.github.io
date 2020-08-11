@@ -4,7 +4,7 @@
   font-size: 165%;
 
   &.symbol {
-    color: color(pink);
+    color: color('pink');
     font-family: $default_font;
     line-height: 0;
     vertical-align: sub;
