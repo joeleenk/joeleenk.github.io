@@ -1,6 +1,11 @@
 import React from "react";
 import FavoriteColors from "./Colors";
 
+/**
+ * About component.
+ *
+ * @returns about
+ */
 const About = () => (
   <section id="about" className="about">
     <h2>About Me</h2>

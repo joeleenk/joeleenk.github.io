@@ -1,18 +1,16 @@
 import React from "react";
-import useDetectPrint from 'use-detect-print';
 
 /**
  * Job component. Displays individual job item.
  *
+ * @param {boolean} isPrinting Find out if we're printing.
  * @param {string} companyName Name of the company.
  * @param {string} fullDate Full date of employment.
  * @param {array} jobPositions Array of different positions held at the company.
  *
  * @returns article
  */
-const Job = ({ companyName, fullDate, jobPositions }) => {
-  // Find out if we're printing.
-  const isPrinting = useDetectPrint();
+const Job = ({ isPrinting, companyName, fullDate, jobPositions }) => {
 
   // Get the company name and full date, if any.
   const CompanyTitle = ({ companyName, fullDate }) => (
@@ -35,7 +33,7 @@ const Job = ({ companyName, fullDate, jobPositions }) => {
     <p className="job__description">{jobDescription}</p>
   );
 
-  // Get the full job details. If we're printing, group content in divs.
+  // Get the full job details. If we're isPrinting, group content in divs.
   const jobFullDetails = jobPositions.map((jobPosition, index) =>
     <React.Fragment key={index}>
       {isPrinting ? (

@@ -1,6 +1,11 @@
 import React from "react";
 import tigger from "../images/tigger.jpg";
 
+/**
+ * Work component.
+ *
+ * @returns work
+ */
 const Work = () => (
   <section id="work" className="work">
     <h2>My Work</h2>

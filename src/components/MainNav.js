@@ -1,5 +1,10 @@
 import React from "react";
 
+/**
+ * Main nav component.
+ *
+ * @returns main nav
+ */
 const MainNav = () => (
   <nav className="app-main-nav">
     <ul>

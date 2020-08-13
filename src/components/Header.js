@@ -1,13 +1,25 @@
 import React from "react";
+import Contact from "./Contact";
 import MainNav from "./MainNav";
 
-const Header = () => (
+/**
+ * Header component.
+ *
+ * @param {boolean} isPrinting Find out if we're printing.
+ *
+ * @returns header
+ */
+const Header = ({ isPrinting }) => (
   <header className="app-header">
     <h1>Joeleen Kennedy</h1>
-    <p>
-      a hybrid designer/front end developer who draws, paints, knits, and bakes
-      sourdough
-    </p>
+    {isPrinting ? (
+      <Contact />
+    ) : (
+      <p>
+        a hybrid designer/front end developer who draws, paints, knits, and bakes
+        sourdough
+      </p>
+    )}
     <MainNav />
   </header>
 );

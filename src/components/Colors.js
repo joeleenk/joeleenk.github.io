@@ -1,6 +1,11 @@
 import React from "react";
 import Colors from "../styles/modules/_colors.scss";
 
+/**
+ * Favorite colors component.
+ *
+ * @returns favorite colors
+ */
 const FavoriteColors = () => (
   <ul className="favorite-colors">
     {Object.entries(Colors).map(([color, hex]) => (
