@@ -8,7 +8,6 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
-    "use-detect-print": "0.0.2",
     "webfontloader": "^1.6.28"
   },
   "scripts": {
