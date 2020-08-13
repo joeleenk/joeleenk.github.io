@@ -17,7 +17,7 @@
     .work,
     .resume h2,
     .print-resume,
-    .app-footer h2 {
+    .app-footer {
       display: none;
     }
 
@@ -37,35 +37,48 @@
     }
 
     .app-header {
-      border-bottom: 6px solid rgba($dark, 0.3);
+      border-bottom: 3px solid rgba($dark, 0.05);
       min-height: 0;
       padding: 2% 0;
       text-align: left;
 
       h1 {
         display: flex;
-        flex: 0 0 38%;
+        flex: 0 0 35%;
         font-size: 160%;
         line-height: 1;
         margin: 0;
         padding: 0.5% 0 0 0;
-
-        &:after {
-          border-right: 1px solid rgba($dark, 0.3);
-          content: "";
-          display: block;
-          margin: -1% auto 0;
-        }
-
-        + p:before {
-          display: none;
-        }
       }
 
-      p {
-        flex: 0 0 62%;
+      .contact-me {
+        flex: 0 0 65%;
         font-size: 83%;
-        margin: 0;
+        justify-content: flex-start;
+
+        li {
+          align-items: center;
+          display: flex;
+          position: relative;
+
+          &:first-of-type {
+            padding-left: 0;
+          }
+
+          &:after {
+            color: rgba($dark, 0.7);
+            font-size: 220%;
+            line-height: 0.5;
+            margin: 0;
+            position: absolute;
+            right: -5px;
+          }
+        }
+
+        a {
+          color: $dark;
+          padding: 0;
+        }
       }
     }
 
@@ -98,12 +111,12 @@
         }
 
         &--left {
-          flex: 0 0 35%;
+          flex: 0 0 32%;
           margin-right: 3%;
         }
 
         &--right {
-          flex: 0 0 62%;
+          flex: 0 0 65%;
 
           &:not(:last-of-type) {
             margin-bottom: 1.3rem;
@@ -113,24 +126,6 @@
         p {
           margin: 0;
         }
-      }
-    }
-
-    .app-footer {
-      border-top: 6px solid rgba($dark, 0.3);
-      font-size: 83%;
-      padding: 2% 0;
-
-      a {
-        color: $dark;
-      }
-    }
-
-    .contact-me {
-      li:after {
-        color: rgba($dark, 0.7);
-        font-size: 170%;
-        line-height: 1;
       }
     }
   }
