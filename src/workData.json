@@ -51,10 +51,6 @@
 		],
 		"clients": [
 			{
-				"clientName": "Altis",
-				"siteURL": "https://www.altis-dxp.com/"
-			},
-			{
 				"clientName": "American Counseling Association",
 				"siteURL": "https://www.counseling.org/"
 			},
@@ -71,48 +67,20 @@
 				"siteURL": "http://www.acsa-arch.org"
 			},
 			{
-				"clientName": "Association of Oil Pipe Lines",
-				"siteURL": "https://aopl.org/"
-			},
-			{
-				"clientName": "Be An Actuary",
-				"siteURL": "http://beanactuary.org"
-			},
-			{
-				"clientName": "Carnegie Endowment for International Peace",
-				"siteURL": "https://carnegieendowment.org/"
-			},
-			{
 				"clientName": "Casualty Actuarial Society",
-				"siteURL": "http://casact.org"
+				"siteURL": "http://beanactuary.org"
 			},
 			{
 				"clientName": "Cellular Telecommunications and Internet Association",
 				"siteURL": "https://www.ctia.org/"
 			},
 			{
-				"clientName": "Chris Sacca",
-				"siteURL": "https://chrissacca.com/"
-			},
-			{
-				"clientName": "Cool Hunting",
-				"siteURL": "https://coolhunting.com/"
-			},
-			{
 				"clientName": "Cougaar Software",
 				"siteURL": "http://www.cougaarsoftware.com/"
 			},
 			{
-				"clientName": "CRDF Global",
-				"siteURL": "http://www.crdfglobal.org/"
-			},
-			{
 				"clientName": "Democratic National Committee",
 				"siteURL": "https://democrats.org/"
-			},
-			{
-				"clientName": "Elon University",
-				"siteURL": "https://www.elon.edu/"
 			},
 			{
 				"clientName": "Encompass Health",
@@ -139,16 +107,8 @@
 				"siteURL": "http://donate.goodwill.org/"
 			},
 			{
-				"clientName": "Internation Facility Management Association",
-				"siteURL": "https://www.ifma.org/"
-			},
-			{
 				"clientName": "Marina Amaral",
 				"siteURL": "https://marinamaral.com/"
-			},
-			{
-				"clientName": "Matrix Group",
-				"siteURL": "https://www.matrixgroup.net/"
 			},
 			{
 				"clientName": "National Association of Episcopal Schools",
@@ -159,30 +119,6 @@
 				"siteURL": "https://www.necanet.org/"
 			},
 			{
-				"clientName": "National Electrical Installation Standards",
-				"siteURL": "http://neca-neis.org/"
-			},
-			{
-				"clientName": "National League of Cities",
-				"siteURL": "https://www.nlc.org/"
-			},
-			{
-				"clientName": "Playstation",
-				"siteURL": "https://blog.playstation.com/"
-			},
-			{
-				"clientName": "Precision Machined Products Association",
-				"siteURL": "http://www.pmpa.org"
-			},
-			{
-				"clientName": "Pressable",
-				"siteURL": "https://pressable.com/"
-			},
-			{
-				"clientName": "Psychedelic Support",
-				"siteURL": "https://psychedelic.support/"
-			},
-			{
 				"clientName": "Road Runners Club of America",
 				"siteURL": "http://www.rrca.org/"
 			},
@@ -191,28 +127,12 @@
 				"siteURL": "https://www.theaerobar.com/"
 			},
 			{
-				"clientName": "The Association of Union Constructors",
-				"siteURL": "http://tauc.org"
-			},
-			{
 				"clientName": "The Endocrine Society",
 				"siteURL": "https://www.endocrine.org/"
 			},
 			{
-				"clientName": "The Erisa Industry Committee",
-				"siteURL": "http://www.eric.org"
-			},
-			{
 				"clientName": "The Peoplestown Project",
 				"siteURL": "http://thepeoplestownproject.com/"
-			},
-			{
-				"clientName": "The Special Interest Group for IIAS Standards",
-				"siteURL": "http://www.sig-is.org"
-			},
-			{
-				"clientName": "Trinity Missions",
-				"siteURL": "http://www.trinitymissions.org"
 			},
 			{
 				"clientName": "Union Presbyterian Seminary",
@@ -225,22 +145,6 @@
 			{
 				"clientName": "USA Today Sports",
 				"siteURL": "https://ftw.usatoday.com/"
-			},
-			{
-				"clientName": "Washington Animal Rescue League",
-				"siteURL": "https://www.humanerescuealliance.org/"
-			},
-			{
-				"clientName": "Washington Building Congress",
-				"siteURL": "http://www.wbcnet.org"
-			},
-			{
-				"clientName": "Workgroup for Electronic Data Interchange",
-				"siteURL": "https://www.wedi.org/"
-			},
-			{
-				"clientName": "Zephyr Adventures",
-				"siteURL": "https://www.zephyradventures.com/"
 			}
 		]
 	}
