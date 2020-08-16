@@ -16,7 +16,7 @@ const Header = ({ isPrinting }) => (
       <Contact />
     ) : (
       <p>
-        a hybrid designer/front end developer who draws, paints, knits, and bakes
+        a hybrid designer/frontend/UX/full stack developer who draws, paints, knits, and bakes
         sourdough
       </p>
     )}

@@ -41,7 +41,6 @@
 
   p {
     @extend %narrow-section;
-    max-width: 780px;
 
     &:last-of-type {
       margin-bottom: auto;

@@ -8,7 +8,6 @@
 .resume {
   > section {
     @extend %narrow-section;
-    max-width: 560px;
 
     @media (min-width: 768px) {
       &.experience {

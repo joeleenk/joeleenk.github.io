@@ -12,21 +12,13 @@ const About = () => (
     <section className="mission">
       <h3>Professional mission</h3>
       <p>
-        I combine my passion for user experience design and accessibility with
-        my development skills to make the web more beautiful, usable and
-        inclusive.
+        I combine my passion for user experience design and accessibility with my development skills to make the web more beautiful, usable and inclusive.
       </p>
     </section>
     <section className="background">
       <h3>My background</h3>
       <p>
-        I've always considered myself an artist and started college on a fine
-        arts/graphic design track. Along the way, I dabbled a bit in
-        photography, video, and animation (2D and 3D). I ended up focusing on
-        web design, and over the course of my career have shifted to frontend
-        development. I still geek out about typography, color theory, balance,
-        and other design principles - I just use code as my brush these days. I
-        am a quick study and learn new things all the time.
+        I've always considered myself an artist and started college on a fine arts/graphic design track. Along the way, I dabbled a bit in photography, video, and animation (2D and 3D). I ended up focusing on web design, and over the course of my career have become a full stack developer with a focus on frontend/UX development. I still geek out about typography, color theory, balance, and other design principles - I just use code as my brush these days. I am a quick study and learn new things all the time.
       </p>
     </section>
     <section className="passions">
