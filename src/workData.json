@@ -1,0 +1,247 @@
+{
+	"workData": {
+		"projects": [
+			{
+				"clientName": "USA Today Sports",
+				"siteURL": "",
+				"projectName": "NCAA Basketball Tournament App",
+				"projectDescription": "React application allowing basketball fans to create and manage pools and brackets for the \"March Madness\" basketball tournament.",
+				"status": "(currently inactive)",
+				"mobileImg": "/images/portfolio/Brackets-mobile.jpg",
+				"desktopImg": "/images/portfolio/Brackets-desktop.jpg",
+				"skills": [
+					"React",
+					"Redux",
+					"CSS",
+					"API integration",
+					"WordPress"
+				]
+			},
+			{
+				"clientName": "Cool Hunting",
+				"siteURL": "https://coolhunting.com/",
+				"projectName": "Digital publication featuring articles and product recommendations",
+				"projectDescription": "Award-winning independent publication that uncovers the latest intersections of design, culture and technology.",
+				"status": "",
+				"mobileImg": "/images/portfolio/CoolHunting-mobile.jpg",
+				"desktopImg": "/images/portfolio/CoolHunting-desktop.jpg",
+				"skills": [
+					"WordPress",
+					"Google Ad Manager",
+					"Infinite Scroll",
+					"JavaScript filtering",
+					"CSS"
+				]
+			},
+			{
+				"clientName": "Psychedelic Support",
+				"siteURL": "https://psychedelic.support/",
+				"projectName": "Website connecting patients and mental health professionals",
+				"projectDescription": "A global web-based platform allowing better knowledge sharing and connection to therapeutic care related to use of psychedelics.",
+				"status": "",
+				"mobileImg": "/images/portfolio/PsychedelicSupport-mobile.jpg",
+				"desktopImg": "/images/portfolio/PsychedelicSupport-desktop.jpg",
+				"skills": [
+					"WordPress",
+					"Design",
+					"WooCommerce",
+					"CSS"
+				]
+			}
+		],
+		"clients": [
+			{
+				"clientName": "Altis",
+				"siteURL": "https://www.altis-dxp.com/"
+			},
+			{
+				"clientName": "American Counseling Association",
+				"siteURL": "https://www.counseling.org/"
+			},
+			{
+				"clientName": "American Society of Addiction Medicine",
+				"siteURL": "http://www.asam.org"
+			},
+			{
+				"clientName": "American Wire Producers Association",
+				"siteURL": "https://www.awpa.org/"
+			},
+			{
+				"clientName": "Association of Collegiate Schools of Architecture",
+				"siteURL": "http://www.acsa-arch.org"
+			},
+			{
+				"clientName": "Association of Oil Pipe Lines",
+				"siteURL": "https://aopl.org/"
+			},
+			{
+				"clientName": "Be An Actuary",
+				"siteURL": "http://beanactuary.org"
+			},
+			{
+				"clientName": "Carnegie Endowment for International Peace",
+				"siteURL": "https://carnegieendowment.org/"
+			},
+			{
+				"clientName": "Casualty Actuarial Society",
+				"siteURL": "http://casact.org"
+			},
+			{
+				"clientName": "Cellular Telecommunications and Internet Association",
+				"siteURL": "https://www.ctia.org/"
+			},
+			{
+				"clientName": "Chris Sacca",
+				"siteURL": "https://chrissacca.com/"
+			},
+			{
+				"clientName": "Cool Hunting",
+				"siteURL": "https://coolhunting.com/"
+			},
+			{
+				"clientName": "Cougaar Software",
+				"siteURL": "http://www.cougaarsoftware.com/"
+			},
+			{
+				"clientName": "CRDF Global",
+				"siteURL": "http://www.crdfglobal.org/"
+			},
+			{
+				"clientName": "Democratic National Committee",
+				"siteURL": "https://democrats.org/"
+			},
+			{
+				"clientName": "Elon University",
+				"siteURL": "https://www.elon.edu/"
+			},
+			{
+				"clientName": "Encompass Health",
+				"siteURL": "https://newsroom.encompasshealth.com/"
+			},
+			{
+				"clientName": "Faces of Auschwitz",
+				"siteURL": "https://facesofauschwitz.com/"
+			},
+			{
+				"clientName": "Food Marketing Institute",
+				"siteURL": "http://fmi.org"
+			},
+			{
+				"clientName": "General Dynamics",
+				"siteURL": "http://www.gd.com"
+			},
+			{
+				"clientName": "Gibbs & Cox",
+				"siteURL": "http://gibbscox.com"
+			},
+			{
+				"clientName": "Goodwill",
+				"siteURL": "http://donate.goodwill.org/"
+			},
+			{
+				"clientName": "Internation Facility Management Association",
+				"siteURL": "https://www.ifma.org/"
+			},
+			{
+				"clientName": "Marina Amaral",
+				"siteURL": "https://marinamaral.com/"
+			},
+			{
+				"clientName": "Matrix Group",
+				"siteURL": "https://www.matrixgroup.net/"
+			},
+			{
+				"clientName": "National Association of Episcopal Schools",
+				"siteURL": "http://episcopalschools.org"
+			},
+			{
+				"clientName": "National Electrical Contractors Association",
+				"siteURL": "https://www.necanet.org/"
+			},
+			{
+				"clientName": "National Electrical Installation Standards",
+				"siteURL": "http://neca-neis.org/"
+			},
+			{
+				"clientName": "National League of Cities",
+				"siteURL": "https://www.nlc.org/"
+			},
+			{
+				"clientName": "Playstation",
+				"siteURL": "https://blog.playstation.com/"
+			},
+			{
+				"clientName": "Precision Machined Products Association",
+				"siteURL": "http://www.pmpa.org"
+			},
+			{
+				"clientName": "Pressable",
+				"siteURL": "https://pressable.com/"
+			},
+			{
+				"clientName": "Psychedelic Support",
+				"siteURL": "https://psychedelic.support/"
+			},
+			{
+				"clientName": "Road Runners Club of America",
+				"siteURL": "http://www.rrca.org/"
+			},
+			{
+				"clientName": "The Aero Bar",
+				"siteURL": "https://www.theaerobar.com/"
+			},
+			{
+				"clientName": "The Association of Union Constructors",
+				"siteURL": "http://tauc.org"
+			},
+			{
+				"clientName": "The Endocrine Society",
+				"siteURL": "https://www.endocrine.org/"
+			},
+			{
+				"clientName": "The Erisa Industry Committee",
+				"siteURL": "http://www.eric.org"
+			},
+			{
+				"clientName": "The Peoplestown Project",
+				"siteURL": "http://thepeoplestownproject.com/"
+			},
+			{
+				"clientName": "The Special Interest Group for IIAS Standards",
+				"siteURL": "http://www.sig-is.org"
+			},
+			{
+				"clientName": "Trinity Missions",
+				"siteURL": "http://www.trinitymissions.org"
+			},
+			{
+				"clientName": "Union Presbyterian Seminary",
+				"siteURL": "http://upsem.edu/"
+			},
+			{
+				"clientName": "University of North Carolina Greensboro",
+				"siteURL": "https://www.uncg.edu/"
+			},
+			{
+				"clientName": "USA Today Sports",
+				"siteURL": "https://ftw.usatoday.com/"
+			},
+			{
+				"clientName": "Washington Animal Rescue League",
+				"siteURL": "https://www.humanerescuealliance.org/"
+			},
+			{
+				"clientName": "Washington Building Congress",
+				"siteURL": "http://www.wbcnet.org"
+			},
+			{
+				"clientName": "Workgroup for Electronic Data Interchange",
+				"siteURL": "https://www.wedi.org/"
+			},
+			{
+				"clientName": "Zephyr Adventures",
+				"siteURL": "https://www.zephyradventures.com/"
+			}
+		]
+	}
+}
