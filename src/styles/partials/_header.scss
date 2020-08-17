@@ -78,6 +78,7 @@
 
       &:after {
         content: "|";
+        display: inline-flex;
         font-size: 50%;
         margin: -0.5vmin 3vmin 0;
       }
