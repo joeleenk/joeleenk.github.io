@@ -2,7 +2,7 @@ import React from "react";
 import jobsData from "../data/jobsData";
 import Job from "./Job";
 import PrintButton from "./PrintButton";
-import resume from "../files/JoeleenKennedyResume2019.pdf";
+import resume from "../files/JoeleenKennedyResume2020.pdf";
 
 /**
  * Resume component.

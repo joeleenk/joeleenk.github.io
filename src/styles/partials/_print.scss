@@ -1,7 +1,8 @@
 /* Print styles for resume */
 @media print {
   #root {
-    font-size: 80%;
+    font-size: 78%;
+    padding: 0 1%;
 
     .print-only {
       display: inherit;
@@ -96,6 +97,11 @@
       > section {
         padding: 0;
       }
+
+      .mission p,
+      .skills p {
+        margin: 0 0 -0.5rem;
+      }
     }
 
     .resume {
@@ -108,7 +114,8 @@
         flex-wrap: wrap;
         grid-column-gap: 0;
         margin: 0;
-        padding: 1em 0;
+        padding: 0.9rem 0;
+        page-break-inside: avoid;
 
         &:first-of-type {
           padding-top: 0;
@@ -127,7 +134,7 @@
           flex: 0 0 65%;
 
           &:not(:last-of-type) {
-            margin-bottom: 1.3rem;
+            margin-bottom: 0.9rem;
           }
         }
 
@@ -135,6 +142,10 @@
           margin: 0;
         }
       }
+    }
+
+    .speaking ul {
+      margin: 0;
     }
   }
 }
