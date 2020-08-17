@@ -1,7 +1,7 @@
 import React from "react";
 import Projects from "./Projects";
 import Clients from "./Clients";
-import workData from "../workData";
+import workData from "../data/workData";
 import tigger from "../images/tigger.jpg";
 
 /**
