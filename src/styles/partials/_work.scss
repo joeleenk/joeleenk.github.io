@@ -9,19 +9,6 @@
   p {
     @extend %narrow-section;
   }
-
-  a {
-    color: color('red');
-
-    &:hover,
-    &:focus {
-      color: color('violet');
-    }
-
-    &:focus {
-      outline-color: color('violet');
-    }
-  }
 }
 
 .project-list {

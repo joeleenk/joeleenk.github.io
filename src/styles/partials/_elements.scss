@@ -27,18 +27,18 @@ small {
 }
 
 a {
-  color: color('orange');
+  color: color('red');
   text-decoration: none;
   transition: all 300ms ease;
 
   &:hover,
   &:focus {
-    color: color('pink');
+    color: color('violet');
     text-decoration: underline;
   }
 
   &:focus {
-    outline-color: color('pink');
+    outline-color: color('violet');
     outline-offset: 0.4rem;
   }
 }
@@ -50,13 +50,13 @@ img {
 }
 
 button {
-  background-color: color('orange');
+  background-color: color('pink');
   border: 0 none;
   border-radius: 2.25rem;
-  @include inset-box-shadow(color('orange'));
+  @include inset-box-shadow(color('pink'));
   color: $light;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   padding: 1.25rem 1.75rem;
   text-transform: uppercase;
@@ -64,12 +64,12 @@ button {
 
   &:hover,
   &:focus {
-    background-color: color('pink');
-    @include inset-box-shadow(color('pink'));
+    background-color: color('red');
+    @include inset-box-shadow(color('red'));
   }
 
   &:focus {
-    outline-color: color('pink');
+    outline-color: color('red');
     outline-offset: 0.5rem;
   }
 }
