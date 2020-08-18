@@ -13,6 +13,7 @@
 
 .things-I-love {
   @extend %flex-list;
+  @include wide-section;
 
   li {
     background-color: rgba($dark, 0.05);
