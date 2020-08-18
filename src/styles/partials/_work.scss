@@ -2,6 +2,7 @@
 .work {
   background-color: scale-color(color('orange'), $lightness: 60%);
   background-image: url("../../images/noise-texture.png");
+  @include box-shadow;
 
   h2,
   h3,
@@ -137,7 +138,7 @@
 
       &--mobile {
         align-self: flex-end;
-        box-shadow: 0 0 15px 0 rgba($dark, 0.5);
+        @include box-shadow;
         margin: -48% 5% 0 0;
         position: relative;
         transform: rotate(4deg);

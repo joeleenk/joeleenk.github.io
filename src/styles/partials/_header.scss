@@ -11,6 +11,7 @@
   @media screen {
     background-color: color('pink');
     background-image: url("../../images/noise-texture.png");
+    @include box-shadow;
     color: $light;
     flex-direction: column;
     font-size: 130%;
