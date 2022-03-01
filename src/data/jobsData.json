@@ -6,8 +6,13 @@
       "jobPositions":
         [
           {
+            "jobTitle": "Senior Web Engineer",
+            "employmentDate": "12/20 - present",
+            "jobDescription": "Build on my experience as a Web Engineer, taking on more complex architecting and team leadership responsibilities."
+          },
+          {
             "jobTitle": "Web Engineer",
-            "employmentDate": "6/19 - present",
+            "employmentDate": "6/19 - 12/20",
             "jobDescription": "Deliver top-quality code to big publishers and enterprise-level clients, combining WordPress with modern JavaScript frameworks such as React/Redux."
           }
         ]
