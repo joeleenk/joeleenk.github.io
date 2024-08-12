@@ -1,6 +1,6 @@
-import React from "react";
-import Contact from "./Contact";
-import MainNav from "./MainNav";
+import React from 'react';
+import Contact from './Contact';
+import MainNav from './MainNav';
 
 /**
  * Header component.
@@ -10,17 +10,17 @@ import MainNav from "./MainNav";
  * @returns header
  */
 const Header = ({ isPrinting }) => (
-  <header className="app-header">
-    <h1>Joeleen Kennedy</h1>
-    {isPrinting ? (
-      <Contact />
-    ) : (
-      <p>
-        a hybrid designer/frontend/UX/full stack developer who draws, paints, knits, and bakes
-        sourdough
-      </p>
-    )}
-    <MainNav />
-  </header>
+	<header className="app-header">
+		<h1>Joeleen Kennedy</h1>
+		{isPrinting ? (
+			<Contact />
+		) : (
+			<p>
+				a UX-focused full-stack engineer who loves WordPress,
+				JavaScript, HTML, CSS and Accessibility
+			</p>
+		)}
+		<MainNav />
+	</header>
 );
 export default Header;

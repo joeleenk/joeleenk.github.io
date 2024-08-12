@@ -1,24 +1,24 @@
 /* General/simple classes */
 
 .large {
-  font-size: 165%;
+	font-size: 165%;
 
-  &.symbol {
-    color: color('pink');
-    font-family: $default_font;
-    line-height: 0;
-    vertical-align: sub;
-  }
+	&.symbol {
+		color: color('pink');
+		font-family: $default_font;
+		line-height: 0;
+		vertical-align: sub;
+	}
 }
 
 .print-only {
-  display: none;
+	display: none;
 }
 
 @each $key, $val in $colors {
-  .#{$key} {
-    background-color: $val;
-    @include inset-box-shadow($val);
-    color: set-text-color($val);
-  }
+	.#{$key} {
+		background-color: $val;
+		@include inset-box-shadow($val);
+		color: set-text-color($val);
+	}
 }

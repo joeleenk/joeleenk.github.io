@@ -1,122 +1,113 @@
 {
-  "jobsData": [
-    {
-      "companyName": "Human Made (Remote)",
-      "fullDate": "",
-      "jobPositions":
-        [
-          {
-            "jobTitle": "Senior Web Engineer",
-            "employmentDate": "12/20 - present",
-            "jobDescription": "Build on my experience as a Web Engineer, taking on more complex architecting and team leadership responsibilities."
-          },
-          {
-            "jobTitle": "Web Engineer",
-            "employmentDate": "6/19 - 12/20",
-            "jobDescription": "Deliver top-quality code to big publishers and enterprise-level clients, combining WordPress with modern JavaScript frameworks such as React/Redux."
-          }
-        ]
-    },
-    {
-      "companyName": "Pressable (Remote)",
-      "fullDate": "",
-      "jobPositions":
-        [
-          {
-            "jobTitle": "Concierge WordPress Engineer",
-            "employmentDate": "4/18 - 2/19",
-            "jobDescription": "Contract with Automattic’s Special Projects team to design and build custom sites for influential people and organizations, using WordPress.com and hosted WordPress instances."
-          }
-        ]
-    },
-    {
-      "companyName": "Freelance",
-      "fullDate": "",
-      "jobPositions":
-        [
-          {
-            "jobTitle": "Front End Developer",
-            "employmentDate": "9/14 - 3/18",
-            "jobDescription": "Provide design and web development services for agencies, small businesses and nonprofits."
-          }
-        ]
-    },
-    {
-      "companyName": "National League of Cities",
-      "fullDate": "",
-      "jobPositions":
-        [
-          {
-            "jobTitle": "Manager, Web Development, Content and Analytics",
-            "employmentDate": "9/13 - 9/14",
-            "jobDescription": "Manage NLC overall web presence. Design and develop new features and multimedia projects. Plan and implement a site refresh/responsive design overhaul. Coordinate, redesign, and rebuild all NLC email marketing templates."
-          }
-        ]
-    },
-    {
-      "companyName": "Matrix Group International, Inc",
-      "fullDate": "(9/10 - 9/13)",
-      "jobPositions":
-        [
-          {
-            "jobTitle": "User Experience Lead/Senior Front End Developer",
-            "employmentDate": "12/11 - 9/13",
-            "jobDescription": "Unify designers, front end developers, and information architects, setting standards and advocating for the team. Review wireframes and designs from a technical viewpoint, implement designs in CMSs, including Sitefinity, Expression Engine and WordPress. Provide consultations, train clients, teach workshops and webinars."
-          },
-          {
-            "jobTitle": "Designer/Front End Developer",
-            "employmentDate": "9/10 - 12/11",
-            "jobDescription": "Design wireframes, moodboards, style guides, and site/app designs. Bridge design and development teams. Implement designs into CMSs, including WordPress, Expression Engine, CommonSpot, and custom ColdFusion. Lead client trainings."
-          }
-        ]
-    },
-    {
-      "companyName": "Elon University",
-      "fullDate": "",
-      "jobPositions":
-        [
-          {
-            "jobTitle": "Multimedia/Graphic Designer",
-            "employmentDate": "11/08 - 9/10",
-            "jobDescription": "Support university departments with web sites, blogs and wikis. Establish and maintain WordPress multisite installation. Create WordPress themes and instructional videos/animations. Design posters, brochures, logos, shirts, etc. Mentor students and teach workshops for faculty and staff."
-          }
-        ]
-    },
-    {
-      "companyName": "Graphik Dimensions",
-      "fullDate": "",
-      "jobPositions":
-        [
-          {
-            "jobTitle": "Junior Web Designer",
-            "employmentDate": "2/08 - 10/08",
-            "jobDescription": "Maintain pictureframes.com, e-promos, quarterly print catalog, high-end photo editing."
-          }
-        ]
-    },
-    {
-      "companyName": "Freelance",
-      "fullDate": "",
-      "jobPositions":
-        [
-          {
-            "jobTitle": "Web/Multimedia Design",
-            "employmentDate": "12/06 - 12/11",
-            "jobDescription": "Design/development of websites, e-promos, ads, animations, presentations, logos, stationary packages, brochures, shirts, etc. Educational/instructional drawings for UNCG."
-          }
-        ]
-    },
-    {
-      "companyName": "Cosmopro Group",
-      "fullDate": "",
-      "jobPositions":
-        [
-          {
-            "jobTitle": "Graphic/Web Designer",
-            "employmentDate": "5/06 - 1/07",
-            "jobDescription": "Maintain pevonia.com, ads for spafinder.com, presentations, print design for spa menus/flyers."
-          }
-        ]
-    }
-  ]
+	"jobsData": [
+		{
+			"companyName": "Human Made (Remote)",
+			"fullDate": "",
+			"jobPositions": [
+				{
+					"jobTitle": "Senior Web Engineer",
+					"employmentDate": "12/20 - present",
+					"jobDescription": "Build on my experience as a Web Engineer, taking on more complex architecting and team leadership responsibilities."
+				},
+				{
+					"jobTitle": "Web Engineer",
+					"employmentDate": "6/19 - 12/20",
+					"jobDescription": "Deliver top-quality code to big publishers and enterprise-level clients, combining WordPress with modern JavaScript frameworks such as React/Redux."
+				}
+			]
+		},
+		{
+			"companyName": "Pressable (Remote)",
+			"fullDate": "",
+			"jobPositions": [
+				{
+					"jobTitle": "Concierge WordPress Engineer",
+					"employmentDate": "4/18 - 2/19",
+					"jobDescription": "Contract with Automattic’s Special Projects team to design and build custom sites for influential people and organizations, using WordPress.com and hosted WordPress instances."
+				}
+			]
+		},
+		{
+			"companyName": "Freelance",
+			"fullDate": "",
+			"jobPositions": [
+				{
+					"jobTitle": "Front End Developer",
+					"employmentDate": "9/14 - 3/18",
+					"jobDescription": "Provide design and web development services for agencies, small businesses and nonprofits."
+				}
+			]
+		},
+		{
+			"companyName": "National League of Cities",
+			"fullDate": "",
+			"jobPositions": [
+				{
+					"jobTitle": "Manager, Web Development, Content and Analytics",
+					"employmentDate": "9/13 - 9/14",
+					"jobDescription": "Manage NLC overall web presence. Design and develop new features and multimedia projects. Plan and implement a site refresh/responsive design overhaul. Coordinate, redesign, and rebuild all NLC email marketing templates."
+				}
+			]
+		},
+		{
+			"companyName": "Matrix Group International, Inc",
+			"fullDate": "(9/10 - 9/13)",
+			"jobPositions": [
+				{
+					"jobTitle": "User Experience Lead/Senior Front End Developer",
+					"employmentDate": "12/11 - 9/13",
+					"jobDescription": "Unify designers, front end developers, and information architects, setting standards and advocating for the team. Review wireframes and designs from a technical viewpoint, implement designs in CMSs, including Sitefinity, Expression Engine and WordPress. Provide consultations, train clients, teach workshops and webinars."
+				},
+				{
+					"jobTitle": "Designer/Front End Developer",
+					"employmentDate": "9/10 - 12/11",
+					"jobDescription": "Design wireframes, moodboards, style guides, and site/app designs. Bridge design and development teams. Implement designs into CMSs, including WordPress, Expression Engine, CommonSpot, and custom ColdFusion. Lead client trainings."
+				}
+			]
+		},
+		{
+			"companyName": "Elon University",
+			"fullDate": "",
+			"jobPositions": [
+				{
+					"jobTitle": "Multimedia/Graphic Designer",
+					"employmentDate": "11/08 - 9/10",
+					"jobDescription": "Support university departments with web sites, blogs and wikis. Establish and maintain WordPress multisite installation. Create WordPress themes and instructional videos/animations. Design posters, brochures, logos, shirts, etc. Mentor students and teach workshops for faculty and staff."
+				}
+			]
+		},
+		{
+			"companyName": "Graphik Dimensions",
+			"fullDate": "",
+			"jobPositions": [
+				{
+					"jobTitle": "Junior Web Designer",
+					"employmentDate": "2/08 - 10/08",
+					"jobDescription": "Maintain pictureframes.com, e-promos, quarterly print catalog, high-end photo editing."
+				}
+			]
+		},
+		{
+			"companyName": "Freelance",
+			"fullDate": "",
+			"jobPositions": [
+				{
+					"jobTitle": "Web/Multimedia Design",
+					"employmentDate": "12/06 - 12/11",
+					"jobDescription": "Design/development of websites, e-promos, ads, animations, presentations, logos, stationary packages, brochures, shirts, etc. Educational/instructional drawings for UNCG."
+				}
+			]
+		},
+		{
+			"companyName": "Cosmopro Group",
+			"fullDate": "",
+			"jobPositions": [
+				{
+					"jobTitle": "Graphic/Web Designer",
+					"employmentDate": "5/06 - 1/07",
+					"jobDescription": "Maintain pevonia.com, ads for spafinder.com, presentations, print design for spa menus/flyers."
+				}
+			]
+		}
+	]
 }

@@ -1,5 +1,5 @@
-import React from "react";
-import Contact from "./Contact";
+import React from 'react';
+import Contact from './Contact';
 
 /**
  * Footer component.
@@ -7,9 +7,9 @@ import Contact from "./Contact";
  * @returns footer
  */
 const Footer = () => (
-  <footer id="contact" className="app-footer">
-    <h2>Contact Me</h2>
-    <Contact />
-  </footer>
+	<footer id="contact" className="app-footer">
+		<h2>Contact Me</h2>
+		<Contact />
+	</footer>
 );
 export default Footer;

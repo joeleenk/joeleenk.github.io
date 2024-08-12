@@ -1,94 +1,106 @@
 /* Styles specific to the resume section */
 
 .print-resume {
-  @extend %flex-list;
-  flex-direction: column;
+	@extend %flex-list;
+	flex-direction: column;
 }
 
 .resume {
-  > section {
-    @extend %narrow-section;
+	> section {
+		@extend %narrow-section;
 
-    @media (min-width: 768px) {
-      &.experience {
-        max-width: 900px;
-      }
-    }
-  }
+		@media (min-width: 768px) {
+			&.experience {
+				max-width: 900px;
+			}
+		}
+	}
 
-  h3 {
-    @include dotted-border($dark, before);
-  }
+	h3 {
+		@include dotted-border($dark, before);
+	}
 }
 
 .resume .job {
-  border-top: 3px solid rgba($dark, 0.05);
-  margin: 0 -1em;
-  padding: 1em;
-  transition: all 300ms ease;
+	border-top: 3px solid rgba($dark, 0.05);
+	margin: 0 -1em;
+	padding: 1em;
+	transition: all 300ms ease;
 
-  &:first-of-type {
-    border-top: 0 none;
-  }
+	&:first-of-type {
+		border-top: 0 none;
+	}
 
-  @media screen {
-    &:hover {
-      background-color: rgba($dark, 0.05);
-      border-color: transparent;
-    }
-  }
+	@media screen {
+		&:hover {
+			background-color: rgba($dark, 0.05);
+			border-color: transparent;
+		}
+	}
 
-  h3,
-  h4,
-  h5,
-  &__date {
-    margin: 0;
-  }
+	h3,
+	h4,
+	h5,
+	&__date {
+		margin: 0;
+	}
 
-  h5,
-  &__date {
-    font-size: 83%;
-  }
+	h5,
+	&__date {
+		font-size: 83%;
+	}
 
-  &__date--full {
-    display: inline-block;
-  }
+	&__date--full {
+		display: inline-block;
+	}
 
-  @media (min-width: 768px) {
-    display: grid;
-    grid-template-columns: 34% 62%;
-    grid-template-rows: max-content max-content auto max-content auto;
-    grid-column-gap: 4%;
+	@media (min-width: 768px) {
+		display: grid;
+		grid-auto-rows: min-content 1fr;
+		grid-template-columns: 34% 62%;
+		grid-template-rows: min-content min-content 1fr;
+		grid-column-gap: 4%;
 
-    &__description {
-      grid-column: 2;
-      grid-row: 1 / 4;
-      margin: 0;
+		&__description {
+			grid-column: 2;
+			grid-row: 1 / 4;
+			margin: 0;
 
-      &:not(:last-of-type) {
-        margin-bottom: 1.3rem;
-      }
+			&:not(:last-of-type) {
+				margin-bottom: 1.3rem;
+			}
 
-      ~ .job__description {
-        grid-column: 2;
-        grid-row: 4 / 6;
-      }
-    }
+			~ .job__description {
+				grid-column: 2;
+				grid-row: 4 / 6;
+			}
+		}
 
-    &__date--full {
-      margin-bottom: 1em;
-    }
-  }
+		&__date--full {
+			margin-bottom: 1em;
+		}
+	}
 }
 
 .education {
-  h4,
-  p {
-    margin: 0;
-  }
+	h4,
+	p {
+		line-height: 1.2;
+		margin: 0.5em;
+	}
 }
 
 .speaking ul {
-  list-style-type: none;
-  padding: 0;
+	line-height: 1.2;
+	list-style-type: none;
+	padding: 0;
+
+	li {
+		margin-bottom: 1.75em;
+	}
+
+	em {
+		display: block;
+		margin-bottom: 0.25em;
+	}
 }

@@ -2,10 +2,26 @@
 	"workData": {
 		"projects": [
 			{
+				"clientName": "The Harvard Gazette",
+				"siteURL": "https://news.harvard.edu/gazette/",
+				"projectName": "Harvard University's official news outlet",
+				"projectDescription": "I was the technical lead for the Harvard Gazette redesign. Together, we transformed and modernized the Gazette's digital presence.",
+				"status": "",
+				"mobileImg": "/images/portfolio/HarvardGazette-mobile.jpg",
+				"desktopImg": "/images/portfolio/HarvardGazette-desktop.jpg",
+				"skills": [
+					"WordPress",
+					"Full Site Editing",
+					"Block Editor",
+					"Design System",
+					"Technical Leadership"
+				]
+			},
+			{
 				"clientName": "USA Today Sports",
 				"siteURL": "",
 				"projectName": "NCAA Basketball Tournament App",
-				"projectDescription": "React application allowing basketball fans to create and manage pools and brackets for the \"March Madness\" basketball tournament.",
+				"projectDescription": "I helped the USA Today Sports Media Group build a React application that allows basketball fans to create and manage pools and brackets for the \"March Madness\" basketball tournament.",
 				"status": "(currently inactive)",
 				"mobileImg": "/images/portfolio/Brackets-mobile.jpg",
 				"desktopImg": "/images/portfolio/Brackets-desktop.jpg",
@@ -15,37 +31,6 @@
 					"CSS",
 					"API integration",
 					"WordPress"
-				]
-			},
-			{
-				"clientName": "Cool Hunting",
-				"siteURL": "https://coolhunting.com/",
-				"projectName": "Digital publication featuring articles and product recommendations",
-				"projectDescription": "Award-winning independent publication that uncovers the latest intersections of design, culture and technology.",
-				"status": "",
-				"mobileImg": "/images/portfolio/CoolHunting-mobile.jpg",
-				"desktopImg": "/images/portfolio/CoolHunting-desktop.jpg",
-				"skills": [
-					"WordPress",
-					"Google Ad Manager",
-					"Infinite Scroll",
-					"JavaScript filtering",
-					"CSS"
-				]
-			},
-			{
-				"clientName": "Psychedelic Support",
-				"siteURL": "https://psychedelic.support/",
-				"projectName": "Website connecting patients and mental health professionals",
-				"projectDescription": "A global web-based platform allowing better knowledge sharing and connection to therapeutic care related to use of psychedelics.",
-				"status": "",
-				"mobileImg": "/images/portfolio/PsychedelicSupport-mobile.jpg",
-				"desktopImg": "/images/portfolio/PsychedelicSupport-desktop.jpg",
-				"skills": [
-					"WordPress",
-					"Design",
-					"WooCommerce",
-					"CSS"
 				]
 			}
 		],
@@ -75,8 +60,8 @@
 				"siteURL": "https://www.ctia.org/"
 			},
 			{
-				"clientName": "Cougaar Software",
-				"siteURL": "http://www.cougaarsoftware.com/"
+				"clientName": "Cool Hunting",
+				"siteURL": "https://coolhunting.com/"
 			},
 			{
 				"clientName": "Democratic National Committee",
@@ -95,20 +80,20 @@
 				"siteURL": "http://fmi.org"
 			},
 			{
-				"clientName": "General Dynamics",
-				"siteURL": "http://www.gd.com"
-			},
-			{
-				"clientName": "Gibbs & Cox",
-				"siteURL": "http://gibbscox.com"
-			},
-			{
 				"clientName": "Goodwill",
 				"siteURL": "http://donate.goodwill.org/"
 			},
 			{
-				"clientName": "Marina Amaral",
-				"siteURL": "https://marinamaral.com/"
+				"clientName": "Green Street News",
+				"siteURL": "https://greenstreetnews.com/"
+			},
+			{
+				"clientName": "Kaplan Living",
+				"siteURL": "https://kaplanliving.com/"
+			},
+			{
+				"clientName": "Kaplan Pathways",
+				"siteURL": "https://www.kaplanpathways.com/"
 			},
 			{
 				"clientName": "National Association of Episcopal Schools",
@@ -119,32 +104,36 @@
 				"siteURL": "https://www.necanet.org/"
 			},
 			{
-				"clientName": "Road Runners Club of America",
-				"siteURL": "http://www.rrca.org/"
+				"clientName": "OASIS",
+				"siteURL": "https://www.oasis-open.org/"
 			},
 			{
-				"clientName": "The Aero Bar",
-				"siteURL": "https://www.theaerobar.com/"
+				"clientName": "Psychedelic Support",
+				"siteURL": "https://psychedelic.support/"
+			},
+			{
+				"clientName": "Road Runners Club of America",
+				"siteURL": "http://www.rrca.org/"
 			},
 			{
 				"clientName": "The Endocrine Society",
 				"siteURL": "https://www.endocrine.org/"
 			},
 			{
-				"clientName": "The Peoplestown Project",
-				"siteURL": "http://thepeoplestownproject.com/"
+				"clientName": "The Harvard Gazette",
+				"siteURL": "https://news.harvard.edu/gazette/"
 			},
 			{
-				"clientName": "Union Presbyterian Seminary",
-				"siteURL": "http://upsem.edu/"
-			},
-			{
-				"clientName": "University of North Carolina Greensboro",
-				"siteURL": "https://www.uncg.edu/"
-			},
-			{
-				"clientName": "USA Today Sports",
+				"clientName": "USA Today Sports Media Group",
 				"siteURL": "https://ftw.usatoday.com/"
+			},
+			{
+				"clientName": "Wikimedia Endowment",
+				"siteURL": "https://wikimediaendowment.org/"
+			},
+			{
+				"clientName": "Wikimedia Foundation",
+				"siteURL": "https://wikimediafoundation.org/"
 			}
 		]
 	}
