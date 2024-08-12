@@ -66,7 +66,7 @@ const Resume = ({ isPrinting, setIsPrinting }) => {
 							Extending core: how to architect new features and
 							simplify workflows
 						</em>
-						WPCampus | Georgetown, Washington, DC | August 2024
+						WPCampus | Washington, DC | August 2024
 					</li>
 					<li>
 						<em>Accessibility and innovation at Harvard Gazette</em>
