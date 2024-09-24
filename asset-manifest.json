@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.86e4ad6f.css",
-    "main.js": "/static/js/main.40a599cb.js",
+    "main.css": "/static/css/main.f3a06f1e.css",
+    "main.js": "/static/js/main.7947f745.js",
     "static/media/marshmallow.jpg": "/static/media/marshmallow.56bca3e4c74ef734eec3.jpg",
     "static/media/JoeleenKennedyResume2024.pdf": "/static/media/JoeleenKennedyResume2024.d3f9d43b66cf4f4bdf9c.pdf",
     "static/media/Varta-VariableFont_wght.woff2": "/static/media/Varta-VariableFont_wght.c90d509ad8685859c185.woff2",
     "static/media/RougeScript-Regular.woff2": "/static/media/RougeScript-Regular.830662b147eaa7c9112e.woff2",
     "static/media/noise-texture.png": "/static/media/noise-texture.6f6e145ead8cca49931a.png",
     "index.html": "/index.html",
-    "main.86e4ad6f.css.map": "/static/css/main.86e4ad6f.css.map",
-    "main.40a599cb.js.map": "/static/js/main.40a599cb.js.map"
+    "main.f3a06f1e.css.map": "/static/css/main.f3a06f1e.css.map",
+    "main.7947f745.js.map": "/static/js/main.7947f745.js.map"
   },
   "entrypoints": [
-    "static/css/main.86e4ad6f.css",
-    "static/js/main.40a599cb.js"
+    "static/css/main.f3a06f1e.css",
+    "static/js/main.7947f745.js"
   ]
 }
