@@ -39,7 +39,8 @@ const Resume = ({ isPrinting, setIsPrinting }) => {
 				<h3>Skills</h3>
 				<p>
 					PHP, HTML, CSS, Sass, JavaScript, React, Webpack, WordPress,
-					accessibility, responsive design, user experience
+					accessibility, responsive design, user experience, technical
+					leadership
 				</p>
 			</section>
 			<section className="experience">
@@ -58,18 +59,33 @@ const Resume = ({ isPrinting, setIsPrinting }) => {
 					with honors
 				</p>
 			</section>
-			<section className="speaking">
+			<section className="speaking" id="speaking">
 				<h3>Speaking</h3>
 				<ul>
 					<li>
-						<em>
-							Extending core: how to architect new features and
-							simplify workflows
-						</em>
+						<a href="https://youtu.be/EL9x9aw54as?t=21222">
+							<em>
+								A Technical Deep Dive Into Our Favorite Features
+								of the New Harvard Gazette Site
+							</em>
+						</a>
+						WordCamp US | Portland, OR | September 2024
+					</li>
+					<li>
+						<a href="https://2024.wpcampus.org/schedule/extending-core-how-to-architect-new-features-and-simplify-workflows/#video">
+							<em>
+								Extending core: how to architect new features
+								and simplify workflows
+							</em>
+						</a>
 						WPCampus | Washington, DC | August 2024
 					</li>
 					<li>
-						<em>Accessibility and innovation at Harvard Gazette</em>
+						<a href="https://www.youtube.com/watch?v=9zdtDF-C15k">
+							<em>
+								Accessibility and innovation at Harvard Gazette
+							</em>
+						</a>
 						Human Made .edu: WordPress in Higher Ed | Virtual | July
 						2024
 					</li>

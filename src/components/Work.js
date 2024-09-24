@@ -38,6 +38,12 @@ const Work = () => (
 				alt="A white fluffy cat named Marshmallow laying in a floppy twist."
 			/>
 		</p>
+		<p>
+			<a href="#speaking">
+				Please also see my public speaking section for links to
+				recordings of me speaking at events.
+			</a>
+		</p>
 	</section>
 );
 export default Work;
