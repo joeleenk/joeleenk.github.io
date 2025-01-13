@@ -63,7 +63,7 @@ const Resume = ({ isPrinting, setIsPrinting }) => {
 				<h3>Speaking</h3>
 				<ul>
 					<li>
-						<a href="https://youtu.be/EL9x9aw54as?t=21222">
+						<a href="https://wordpress.tv/2024/10/10/a-technical-deep-dive-into-our-favorite-features-of-the-new-harvard-gazette-site/">
 							<em>
 								A Technical Deep Dive Into Our Favorite Features
 								of the New Harvard Gazette Site
