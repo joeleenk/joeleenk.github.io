@@ -14,11 +14,3 @@
 .print-only {
 	display: none;
 }
-
-@each $key, $val in $colors {
-	.#{$key} {
-		background-color: $val;
-		@include inset-box-shadow($val);
-		color: set-text-color($val);
-	}
-}
