@@ -1,0 +1,17 @@
+---
+/**
+ * Print button component.
+ *
+ * No client-side state needed: the resume's print-specific layout is handled
+ * entirely by `_print.scss` (`@media print`), so this only needs to trigger
+ * the browser's print dialog.
+ */
+---
+
+<button id="print-resume-btn" type="button">Print this section</button>
+
+<script>
+	document
+		.getElementById('print-resume-btn')
+		?.addEventListener('click', () => window.print());
+</script>

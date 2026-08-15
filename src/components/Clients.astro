@@ -1,0 +1,20 @@
+---
+/**
+ * Clients component.
+ */
+export interface Props {
+	clientsListData: Array<{ clientName: string; siteURL: string }>;
+}
+
+const { clientsListData } = Astro.props;
+---
+
+<ul class="client-list">
+	{
+		clientsListData.map((client) => (
+			<li class="client">
+				<a href={client.siteURL}>{client.clientName}</a>
+			</li>
+		))
+	}
+</ul>

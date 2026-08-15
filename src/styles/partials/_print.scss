@@ -43,6 +43,10 @@
       padding: 2% 0;
       text-align: left;
 
+      &__tagline {
+        display: none;
+      }
+
       h1 {
         display: flex;
         flex: 0 0 35%;

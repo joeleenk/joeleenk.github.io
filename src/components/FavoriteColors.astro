@@ -1,0 +1,21 @@
+---
+import colors from '../data/colors.json';
+
+/**
+ * Favorite colors component.
+ *
+ * Reads from src/data/colors.json rather than importing the Sass color map
+ * directly — see the note in src/styles/modules/_colors.scss.
+ */
+---
+
+<ul class="favorite-colors">
+	{
+		Object.entries(colors).map(([color, hex]) => (
+			<li class={color}>
+				<h4 class="color-name">{color}</h4>
+				<p class="color-hex">{hex}</p>
+			</li>
+		))
+	}
+</ul>
