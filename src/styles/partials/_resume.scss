@@ -54,25 +54,25 @@
 		display: inline-block;
 	}
 
+	// job--left/job--right are always rendered (see Job.astro) so a position's
+	// title/meta and its description can sit side by side via a two-column
+	// grid, with each position landing on its own row.
 	@media (min-width: 768px) {
 		display: grid;
-		grid-auto-rows: 1.15em auto;
 		grid-template-columns: 34% 62%;
-		grid-template-rows: min-content min-content 1fr;
 		grid-column-gap: 4%;
+		align-items: start;
 
-		&__description {
+		&--left {
+			grid-column: 1;
+		}
+
+		&--right {
 			grid-column: 2;
-			grid-row: 1 / 4;
 			margin: 0;
 
 			&:not(:last-of-type) {
 				margin-bottom: 1.3rem;
-			}
-
-			~ .job__description {
-				grid-column: 2;
-				grid-row: 4 / 6;
 			}
 		}
 

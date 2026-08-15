@@ -4,6 +4,10 @@ $light: white;
 $dark: black;
 
 // Colors
+//
+// NOTE: keep this map in sync with src/data/colors.json, which duplicates
+// these values for use in FavoriteColors.astro (Astro/Vite doesn't support
+// reading a Sass map back out as JS the way webpack's `:export` ICSS block did).
 $colors: (
   'pink': #ff1e65,
   'red': #ad0a1a,
@@ -16,10 +20,3 @@ $colors: (
   'violet': #45149b,
   'purple': #c19eff
 );
-
-// Export colors list for React
-:export {
-  @each $key, $val in $colors {
-    #{$key}: #{$val};
-  }
-}

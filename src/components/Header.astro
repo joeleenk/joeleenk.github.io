@@ -1,0 +1,22 @@
+---
+import Contact from './Contact.astro';
+import MainNav from './MainNav.astro';
+
+/**
+ * Header component.
+ *
+ * The tagline is shown on screen; Contact is shown only when printing
+ * (`.print-only`, toggled by `_print.scss` / `_classes.scss`) — this replaces
+ * the old `isPrinting`-driven ternary between the two.
+ */
+---
+
+<header class="app-header">
+	<h1>Joeleen Kennedy</h1>
+	<p class="app-header__tagline">
+		a UX-focused full-stack engineer who loves WordPress, JavaScript, HTML,
+		CSS and Accessibility
+	</p>
+	<Contact class="print-only" />
+	<MainNav />
+</header>

@@ -1,0 +1,59 @@
+---
+/**
+ * Projects component.
+ */
+export interface Props {
+	projectsListData: Array<{
+		clientName: string;
+		siteURL: string;
+		projectName: string;
+		projectDescription: string;
+		status?: string;
+		mobileImg: string;
+		desktopImg: string;
+		skills: string[];
+	}>;
+}
+
+const { projectsListData } = Astro.props;
+---
+
+<ul class="project-list">
+	{
+		projectsListData.map((project) => (
+			<li class="project">
+				<img
+					src={project.desktopImg}
+					class="project__img project__img--desktop"
+					alt=""
+				/>
+				<img
+					src={project.mobileImg}
+					class="project__img project__img--mobile"
+					alt=""
+				/>
+				<h4 class="project__name">
+					<small class="client-name">{project.clientName}</small>
+					{project.siteURL ? (
+						<a href={project.siteURL}>
+							<span>{project.projectName}</span>
+						</a>
+					) : (
+						project.projectName
+					)}
+				</h4>
+				<p class="project__description">{project.projectDescription}</p>
+				{project.status && (
+					<small class="project__status">
+						<em>{project.status}</em>
+					</small>
+				)}
+				<ul class="project__tags">
+					{project.skills.map((skill) => (
+						<li class="project__tag">{skill}</li>
+					))}
+				</ul>
+			</li>
+		))
+	}
+</ul>

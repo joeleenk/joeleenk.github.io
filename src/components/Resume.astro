@@ -1,0 +1,97 @@
+---
+import jobsData from '../data/jobsData.json';
+import Job from './Job.astro';
+import PrintButton from './PrintButton.astro';
+
+/**
+ * Resume component.
+ */
+---
+
+<section id="resume" class="resume">
+	<h2>Resume</h2>
+	<ul class="print-resume">
+		<li>
+			<PrintButton />
+		</li>
+		<li>
+			<a href="/files/JoeleenKennedyResume2024.pdf">
+				<small>
+					Button not working? Download a pre-compiled PDF of my resume.
+				</small>
+			</a>
+		</li>
+	</ul>
+	<section class="skills">
+		<h3>Skills</h3>
+		<p>
+			PHP, HTML, CSS, Sass, JavaScript, React, Webpack, WordPress,
+			accessibility, responsive design, user experience, technical
+			leadership
+		</p>
+	</section>
+	<section class="experience">
+		<h3>Experience</h3>
+		{jobsData.jobsData.map((job) => <Job {...job} />)}
+	</section>
+	<section class="education">
+		<h3>Education</h3>
+		<h4>Daytona Beach Community College</h4>
+		<p>
+			Associate of Science in Digital Media Technology, <br />
+			Summa Cum Laude
+		</p>
+		<p>
+			Associate of Science in Graphic Design Technology, <br />
+			with honors
+		</p>
+	</section>
+	<section class="speaking" id="speaking">
+		<h3>Speaking</h3>
+		<ul>
+			<li>
+				<a href="https://wordpress.tv/2024/10/10/a-technical-deep-dive-into-our-favorite-features-of-the-new-harvard-gazette-site/">
+					<em>
+						A Technical Deep Dive Into Our Favorite Features of the New
+						Harvard Gazette Site
+					</em>
+				</a>
+				WordCamp US | Portland, OR | September 2024
+			</li>
+			<li>
+				<a href="https://2024.wpcampus.org/schedule/extending-core-how-to-architect-new-features-and-simplify-workflows/#video">
+					<em>
+						Extending core: how to architect new features and simplify
+						workflows
+					</em>
+				</a>
+				WPCampus | Washington, DC | August 2024
+			</li>
+			<li>
+				<a href="https://www.youtube.com/watch?v=9zdtDF-C15k">
+					<em>Accessibility and innovation at Harvard Gazette</em>
+				</a>
+				Human Made .edu: WordPress in Higher Ed | Virtual | July 2024
+			</li>
+			<li>
+				<em>
+					Accessibility Meets Innovation: Redefining Storytelling in
+					WordPress
+				</em>
+				Harvard Digital Academy | Virtual | June 2024
+			</li>
+			<li>
+				<em>Customizing WordPress</em>
+				DC Web Women | Washington, DC | 2013
+			</li>
+			<li>
+				<em>jQuery Basics for Web Developers</em>
+				DC Web Women | Washington, DC | 2013
+			</li>
+			<li>
+				<em>What&rsquo;s New with HTML5 and CSS3?</em>
+				DC Web Women | Washington, DC | 2012
+			</li>
+		</ul>
+	</section>
+</section>

@@ -1,0 +1,45 @@
+---
+/**
+ * Job component. Displays individual job item.
+ *
+ * `job--left`/`job--right` are always rendered now (previously only when
+ * printing) — see the corresponding `_resume.scss` grid rules for screen
+ * layout and `_print.scss` for the print (flex) layout, both of which target
+ * these same two wrapper classes.
+ */
+export interface Props {
+	companyName: string;
+	fullDate?: string;
+	jobPositions: Array<{
+		jobTitle: string;
+		employmentDate: string;
+		jobDescription: string;
+	}>;
+}
+
+const { companyName, fullDate, jobPositions } = Astro.props;
+---
+
+<article class="job">
+	{
+		jobPositions.map((jobPosition, index) => (
+			<Fragment>
+				<div class="job--left">
+					{index === 0 && (
+						<h4>
+							{companyName}
+							{fullDate && (
+								<span class="job__date job__date--full">{fullDate}</span>
+							)}
+						</h4>
+					)}
+					<h5>{jobPosition.jobTitle}</h5>
+					<p class="job__date">{jobPosition.employmentDate}</p>
+				</div>
+				<div class="job--right">
+					<p class="job__description">{jobPosition.jobDescription}</p>
+				</div>
+			</Fragment>
+		))
+	}
+</article>
