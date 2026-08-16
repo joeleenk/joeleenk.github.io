@@ -117,7 +117,7 @@
 			.job {
 				display: flex;
 				flex-wrap: wrap;
-				grid-column-gap: 0;
+				gap: 1em;
 				margin: 0;
 				padding: 0.9rem 0;
 				page-break-inside: avoid;
@@ -132,15 +132,10 @@
 
 				&--left {
 					flex: 0 0 32%;
-					margin-right: 3%;
 				}
 
 				&--right {
 					flex: 0 0 65%;
-
-					&:not(:last-of-type) {
-						margin-bottom: 0.9rem;
-					}
 				}
 
 				p {

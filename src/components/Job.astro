@@ -26,12 +26,14 @@ const { companyName, fullDate, jobPositions } = Astro.props;
 			<Fragment>
 				<div class="job--left">
 					{index === 0 && (
-						<h4>
-							{companyName}
+						<>
+							<h4>
+								{companyName}
+							</h4>
 							{fullDate && (
-								<span class="job__date job__date--full">{fullDate}</span>
+								<p class="job__date job__date--full">{fullDate}</p>
 							)}
-						</h4>
+						</>
 					)}
 					<h5>{jobPosition.jobTitle}</h5>
 					<p class="job__date">{jobPosition.employmentDate}</p>

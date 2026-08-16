@@ -70,7 +70,9 @@
 }
 
 .app-main-nav {
+	flex-basis: 100%;
 	margin-top: 12vmin;
+	max-width: 75rem;
 
 	ul {
 		@extend %flex-list;

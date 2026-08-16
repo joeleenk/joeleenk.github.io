@@ -15,6 +15,7 @@
 	@extend %flex-list;
 	@include wide-section;
 	gap: 2vmin;
+	max-width: 75rem;
 
 	li {
 		background-color: rgba($dark, 0.05);

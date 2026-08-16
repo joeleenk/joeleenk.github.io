@@ -25,18 +25,35 @@
 
 .resume .job {
 	border-top: 3px solid rgba($dark, 0.05);
-	margin: 0 -1em;
-	padding: 1em;
-	transition: all 300ms ease;
+	display: grid;
+	gap: 4vmin;
+	padding-block: 1em;
+	position: relative;
+	transition: border-color 300ms ease;
 
 	&:first-of-type {
 		border-top: 0 none;
 	}
 
+	&::before {
+		content: '';
+		display: block;
+		inset: 0 -1em;
+		pointer-events: none;
+		position: absolute;
+		transition: background-color 300ms ease;
+	}
+
 	@media screen {
 		&:hover {
-			background-color: rgba($dark, 0.05);
-			border-color: transparent;
+			&,
+			& + .job {
+				border-color: transparent;
+			}
+
+			&::before {
+				background-color: rgba($dark, 0.05);
+			}
 		}
 	}
 
@@ -56,13 +73,15 @@
 		display: inline-block;
 	}
 
+	p:first-child {
+		margin-top: 0;
+	}
+
 	// job--left/job--right are always rendered (see Job.astro) so a position's
 	// title/meta and its description can sit side by side via a two-column
 	// grid, with each position landing on its own row.
 	@media (min-width: 768px) {
-		display: grid;
 		grid-template-columns: 34% 62%;
-		grid-column-gap: 4%;
 		align-items: start;
 
 		&--left {
@@ -71,11 +90,6 @@
 
 		&--right {
 			grid-column: 2;
-			margin: 0;
-
-			&:not(:last-of-type) {
-				margin-bottom: 1.3rem;
-			}
 		}
 
 		&__date--full {
