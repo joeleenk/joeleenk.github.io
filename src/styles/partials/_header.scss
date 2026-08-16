@@ -1,99 +1,110 @@
 /* Styles for the app header */
 
 .app-header {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 0 5%;
-  text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 8vmin 6vmin 4vmin;
 
-  @media screen {
-    background-color: color('pink');
-    background-image: url("../../images/noise-texture.png");
-    @include box-shadow;
-    color: $light;
-    flex-direction: column;
-    font-size: 130%;
-  }
+	@media screen {
+		background-color: color('indigo');
+		@include box-shadow-border(color('teal'));
+		color: $light;
+		font-size: 110%;
+	}
 
-  h1 {
-    @media screen {
-      font-family: $fancy_font;
-      font-size: 26vmin;
-      font-weight: 400;
-      line-height: 0.75;
-      margin: auto 0 1vmin;
-      opacity: 0.8;
-      text-shadow: 0.5vmin 0.5vmin 0.5vmin scale-color(color('pink'), $lightness: -40%);
+	h1 {
+		@media screen {
+			align-items: end;
+			display: flex;
+			flex-direction: column;
+			font-weight: 400;
+			margin: 0;
+			opacity: 0.9;
 
-      + p {
-        margin-top: 0;
-        @include dotted-border($light, before);
-      }
-    }
+			.name-script {
+				font-family: $fancy_font;
+				font-size: 13vmin;
+				line-height: 0.75;
+			}
 
-    @media screen and (max-width: 1129px) {
-      font-size: 32vmin;
-      text-indent: -30vmin;
-      transform: translateX(7vmin);
-    }
-  }
+			.name-sans {
+				font-family: $base_font;
+				font-size: 5vmin;
+				font-variation-settings: 'wght' 700;
+				letter-spacing: 0.25vmin;
+				line-height: 1;
+				text-transform: uppercase;
+				margin-right: 0.5vmin;
+			}
 
-  p {
-    @extend %narrow-section;
+			+ p {
+				@include dotted-border($light, horizontal, before);
+				align-items: center;
+				margin: 0;
+				text-align: center;
+			}
+		}
 
-    &:last-of-type {
-      margin-bottom: auto;
-    }
-  }
+		@media screen and (min-width: 600px) {
+			+ p {
+				@include dotted-border($light, vertical, before);
+				flex: 1 1 50%;
+				text-align: left;
+			}
+		}
+	}
 
-  a {
-    color: $light;
-    padding: 0.2rem 0.4rem;
+	p {
+		@extend %narrow-section;
+	}
 
-    &:focus {
-      outline-color: $light;
-    }
-  }
+	a {
+		color: $light;
+		padding: 0.2rem 0.4rem;
+
+		&:focus {
+			outline-color: $light;
+		}
+	}
 }
 
 .app-main-nav {
-  ul {
-    @extend %flex-list;
-    font-variation-settings: 'wght' 700;
-    justify-content: center;
-    max-width: 300px;
-    text-transform: uppercase;
+	margin-top: 12vmin;
 
-    @media (min-width: 550px) {
-      max-width: unset;
-    }
+	ul {
+		@extend %flex-list;
+		font-variation-settings: 'wght' 700;
+		justify-content: center;
+		max-width: 300px;
+		text-transform: uppercase;
 
-    li {
-      align-items: center;
-      display: flex;
-      flex: 0 0 auto;
-      margin: 0;
-      padding: 0;
+		@media (min-width: 600px) {
+			max-width: unset;
+		}
 
-      &:after {
-        content: "|";
-        display: inline-flex;
-        font-size: 50%;
-        margin: -0.5vmin 3vmin 0;
-      }
+		li {
+			align-items: center;
+			display: flex;
+			flex: 0 0 auto;
 
-      &:nth-child(2):after,
-      &:last-child:after {
-        display: none;
-      }
+			&:after {
+				content: '|';
+				display: inline-flex;
+				font-size: 50%;
+				margin: -0.5vmin 3vmin 0;
+			}
 
-      @media (min-width: 550px) {
-        &:nth-child(2):after {
-          display: block;
-        }
-      }
-    }
-  }
+			&:nth-child(2):after,
+			&:last-child:after {
+				display: none;
+			}
+
+			@media (min-width: 600px) {
+				&:nth-child(2):after {
+					display: block;
+				}
+			}
+		}
+	}
 }

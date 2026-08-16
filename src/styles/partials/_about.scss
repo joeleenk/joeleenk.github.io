@@ -7,13 +7,14 @@
 
 .passions {
 	background-color: rgba($dark, 0.05);
-	margin: 5% -5.55%;
-	padding: 5%;
+	margin: 6vmin -6vmin 0;
+	padding: 6vmin 6vmin 12vmin;
 }
 
 .things-I-love {
 	@extend %flex-list;
 	@include wide-section;
+	gap: 2vmin;
 
 	li {
 		background-color: rgba($dark, 0.05);
@@ -21,4 +22,3 @@
 		padding: 2rem 1.5rem;
 	}
 }
-

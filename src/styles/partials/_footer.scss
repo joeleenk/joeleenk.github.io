@@ -1,72 +1,57 @@
 /* Styles for the app header */
 
 .app-footer {
-  @media screen {
-    background-color: color('indigo');
-    background-image: url("../../images/noise-texture.png");
-    @include box-shadow;
-    color: $light;
-    padding: 5%;
-  }
+	@media screen {
+		@include box-shadow-border(color('teal'));
+		background-color: color('indigo');
+		color: $light;
+		padding: 6vmin;
+	}
 
-  h2 {
-    font-size: 130%;
-    margin: 0.5rem 0;
+	h2 {
+		@include dotted-border($light, horizontal, after);
+		font-size: 130%;
+		margin: 0;
+	}
 
-    &:after {
-      border-color: $light;
-    }
-  }
+	a {
+		color: $light;
+		display: block;
+		padding: 0.2rem 0;
 
-  a {
-    color: $light;
-    padding: 0.2rem 0.5rem;
+		&:focus {
+			outline-color: $light;
+		}
+	}
 
-    &:focus {
-      outline-color: $light;
-    }
-  }
+	@media (min-width: 600px) {
+		align-items: center;
+		display: flex;
+		justify-content: center;
 
-  @media (min-width: 768px) {
-    align-items: flex-start;
-    display: flex;
-    justify-content: center;
-
-    h2 {
-      display: flex;
-      font-family: $fancy_font;
-      font-size: 350%;
-      font-weight: 400;
-      justify-content: flex-end;
-      margin: 0 5% 0 0;
-      opacity: 0.8;
-      text-shadow: 0.3rem 0.3rem 0.3rem scale-color(color('indigo'), $lightness: -40%);
-      text-transform: none;
-
-      &:after {
-        display: inline-block;
-        margin: 0;
-        transform: rotate(90deg);
-      }
-    }
-
-    h2,
-    .contact-me {
-      margin-top: 0.3rem;
-    }
-  }
+		h2 {
+			@include dotted-border($light, vertical, after);
+			font-family: $fancy_font;
+			font-size: 340%;
+			font-weight: 400;
+			opacity: 0.8;
+			text-transform: none;
+		}
+	}
 }
 
 .contact-me {
-  @extend %flex-list;
-  margin: 0;
+	@extend %flex-list;
 
-  @media screen {
-    flex-direction: column;
-  }
+	@media screen {
+		flex-direction: column;
+	}
 
-  li {
-    flex: 0 1 auto;
-    margin: 0 0 0.5rem;
-  }
+	@media (min-width: 600px) {
+		align-items: start;
+	}
+
+	li {
+		flex: 0 1 auto;
+	}
 }

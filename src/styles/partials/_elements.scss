@@ -1,88 +1,99 @@
 /* Basic content level html elements go here */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: $base_font;
-  font-size: calc(10px + 1.5vmin);
-  line-height: 1.4;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+	font-family: $base_font;
+	font-size: calc(10px + 1.5vmin);
+	line-height: 1.4;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 
-  @media screen {
-    background-image: url("../../images/noise-texture.png");
-  }
+	@media screen {
+		background-image: url('../../images/noise-texture.png');
+	}
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+	font-family:
+		source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 h2 {
-  @include dotted-border;
-  font-size: 200%;
-  line-height: 1;
-  text-align: center;
-  text-transform: uppercase;
+	@include dotted-border;
+	font-size: 200%;
+	line-height: 1;
+	margin-block: 6vmin 0;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 h3 {
-  font-size: 130%;
-  text-align: center;
+	font-size: 130%;
+	margin-block: 3vmin;
+	text-align: center;
+
+	&:is(h2 + section h3:first-child),
+	&:is(h2 + h3) {
+		margin-top: 0;
+	}
+}
+
+p {
+	margin-block: 3vmin 0;
 }
 
 small {
-  font-size: 72%;
+	font-size: 72%;
 }
 
 a {
-  color: color('red');
-  text-decoration: none;
-  transition: all 300ms ease;
+	color: color('red');
+	text-decoration: none;
+	transition: all 300ms ease;
 
-  &:hover,
-  &:focus {
-    color: color('violet');
-    text-decoration: underline;
-  }
+	&:hover,
+	&:focus {
+		color: color('violet');
+		text-decoration: underline;
+	}
 
-  &:focus {
-    outline-color: color('violet');
-    outline-offset: 0.4rem;
-  }
+	&:focus {
+		outline-color: color('violet');
+		outline-offset: 0.4rem;
+	}
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  margin: 1em auto;
+	display: block;
+	max-width: 100%;
+	margin: 1em auto;
 }
 
 button {
-  background-color: color('pink');
-  border: 0 none;
-  border-radius: 2.25rem;
-  @include inset-box-shadow(color('pink'));
-  color: $light;
-  cursor: pointer;
-  font-size: 1.2rem;
-  font-weight: 700;
-  padding: 1.25rem 1.75rem;
-  text-transform: uppercase;
-  transition: all 300ms ease;
+	background-color: color('pink');
+	border: 0 none;
+	border-radius: 2.25rem;
+	@include inset-box-shadow(color('pink'));
+	color: $light;
+	cursor: pointer;
+	font-size: 1.2rem;
+	font-weight: 700;
+	padding: 1.25rem 1.75rem;
+	text-transform: uppercase;
+	transition: all 300ms ease;
 
-  &:hover,
-  &:focus {
-    background-color: color('red');
-    @include inset-box-shadow(color('red'));
-  }
+	&:hover,
+	&:focus {
+		background-color: color('red');
+		@include inset-box-shadow(color('red'));
+	}
 
-  &:focus {
-    outline-color: color('red');
-    outline-offset: 0.5rem;
-  }
+	&:focus {
+		outline-color: color('red');
+		outline-offset: 0.5rem;
+	}
 }
 
 li {
-  margin-bottom: 0.5em;
+	margin-bottom: 0.5em;
 }

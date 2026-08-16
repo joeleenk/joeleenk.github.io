@@ -1,5 +1,9 @@
 /* More general layout styling */
 
 main > section {
-  padding: 5%;
+	padding: 6vmin;
+
+	&.about {
+		padding-bottom: 0;
+	}
 }

@@ -1,155 +1,156 @@
 /* Print styles for resume */
 @media print {
-  #root {
-    font-size: 78%;
-    padding: 0 1%;
+	#root {
+		font-size: 78%;
+		padding: 0 1%;
 
-    .print-only {
-      display: inherit;
-    }
+		.print-only {
+			display: inherit;
+		}
 
-    .app-main-nav,
-    h2:after,
-    .about h2,
-    .about h3,
-    .background,
-    .passions,
-    .fun-fact,
-    .work,
-    .resume h2,
-    .print-resume,
-    .app-footer {
-      display: none;
-    }
+		.app-main-nav,
+		h2:after,
+		.about h2,
+		.about h3,
+		.background,
+		.passions,
+		.fun-fact,
+		.work,
+		.resume h2,
+		.print-resume,
+		.app-footer {
+			display: none;
+		}
 
-    h3 {
-      margin: 2% 0;
+		h3 {
+			margin: 2% 0;
 
-      &::before {
-        margin: 2% auto;
-      }
-    }
+			&::before {
+				margin: 2% auto;
+			}
+		}
 
-    a:hover,
-    a:focus {
-      color: inherit;
-      outline: none;
-      text-decoration: none;
-    }
+		a:hover,
+		a:focus {
+			color: inherit;
+			outline: none;
+			text-decoration: none;
+		}
 
-    .app-header {
-      border-bottom: 3px solid rgba($dark, 0.05);
-      min-height: 0;
-      padding: 2% 0;
-      text-align: left;
+		.app-header {
+			border-bottom: 3px solid rgba($dark, 0.05);
+			min-height: 0;
+			padding: 2% 0;
+			text-align: left;
 
-      &__tagline {
-        display: none;
-      }
+			&__tagline {
+				display: none;
+			}
 
-      h1 {
-        display: flex;
-        flex: 0 0 35%;
-        font-size: 160%;
-        line-height: 1;
-        margin: 0;
-        padding: 0.5% 0 0 0;
-      }
+			h1 {
+				display: flex;
+				flex: 0 0 35%;
+				font-size: 160%;
+				line-height: 1;
+				margin: 0;
+				padding: 0.5% 0 0 0;
+			}
 
-      .contact-me {
-        align-items: baseline;
-        flex: 0 0 65%;
-        font-size: 83%;
-        justify-content: flex-start;
+			.contact-me {
+				align-items: baseline;
+				flex: 0 0 65%;
+				font-size: 83%;
+				justify-content: flex-start;
 
-        li {
-          align-items: center;
-          display: flex;
-          margin: 0.5rem 0 0;
-          position: relative;
+				li {
+					align-items: center;
+					display: flex;
+					margin: 0.5rem 0 0;
+					padding: 0 2vmin;
+					position: relative;
 
-          &:first-of-type {
-            padding-left: 0;
-          }
+					&:first-of-type {
+						padding-left: 0;
+					}
 
-          &:after {
-            color: rgba($dark, 0.7);
-            content: "\2022";
-            display: block;
-            font-size: 220%;
-            line-height: 0.5;
-            margin: 0;
-            position: absolute;
-            right: -5px;
-          }
-    
-          &:last-child:after {
-            display: none;
-          }
-        }
+					&:after {
+						color: rgba($dark, 0.7);
+						content: '\2022';
+						display: block;
+						font-size: 220%;
+						line-height: 0.5;
+						margin: 0;
+						position: absolute;
+						right: -5px;
+					}
 
-        a {
-          color: $dark;
-          padding: 0;
-        }
-      }
-    }
+					&:last-child:after {
+						display: none;
+					}
+				}
 
-    main {
-      padding: 2% 0;
+				a {
+					color: $dark;
+					padding: 0;
+				}
+			}
+		}
 
-      > section {
-        padding: 0;
-      }
+		main {
+			padding: 2% 0;
 
-      .mission p,
-      .skills p {
-        margin: 0 0 -0.5rem;
-      }
-    }
+			> section {
+				padding: 0;
+			}
 
-    .resume {
-      > section {
-        max-width: none;
-      }
+			.mission p,
+			.skills p {
+				margin: 0 0 -0.5rem;
+			}
+		}
 
-      .job {
-        display: flex;
-        flex-wrap: wrap;
-        grid-column-gap: 0;
-        margin: 0;
-        padding: 0.9rem 0;
-        page-break-inside: avoid;
+		.resume {
+			> section {
+				max-width: none;
+			}
 
-        &:first-of-type {
-          padding-top: 0;
-        }
+			.job {
+				display: flex;
+				flex-wrap: wrap;
+				grid-column-gap: 0;
+				margin: 0;
+				padding: 0.9rem 0;
+				page-break-inside: avoid;
 
-        &:last-of-type {
-          padding-bottom: 0;
-        }
+				&:first-of-type {
+					padding-top: 0;
+				}
 
-        &--left {
-          flex: 0 0 32%;
-          margin-right: 3%;
-        }
+				&:last-of-type {
+					padding-bottom: 0;
+				}
 
-        &--right {
-          flex: 0 0 65%;
+				&--left {
+					flex: 0 0 32%;
+					margin-right: 3%;
+				}
 
-          &:not(:last-of-type) {
-            margin-bottom: 0.9rem;
-          }
-        }
+				&--right {
+					flex: 0 0 65%;
 
-        p {
-          margin: 0;
-        }
-      }
-    }
+					&:not(:last-of-type) {
+						margin-bottom: 0.9rem;
+					}
+				}
 
-    .speaking ul {
-      margin: 0;
-    }
-  }
+				p {
+					margin: 0;
+				}
+			}
+		}
+
+		.speaking ul {
+			margin: 0;
+		}
+	}
 }

@@ -3,19 +3,19 @@ Main sass file importing files from styles folder.
 */
 
 /* Import from modules (colors, extends, mixins) */
-@import "./modules/variables";
-@import "./modules/colors";
-@import "./modules/utility";
+@import './modules/variables';
+@import './modules/colors';
+@import './modules/utility';
 
 /* Import from partials (styles seperated by type/section) */
-@import "./partials/elements";
-@import "./partials/layout";
-@import "./partials/header";
-@import "./partials/footer";
-@import "./partials/about";
-@import "./partials/work";
-@import "./partials/resume";
-@import "./partials/classes";
+@import './partials/elements';
+@import './partials/layout';
+@import './partials/header';
+@import './partials/footer';
+@import './partials/about';
+@import './partials/work';
+@import './partials/resume';
+@import './partials/classes';
 
 /* Print styles */
-@import "./partials/print";
+@import './partials/print';

@@ -3,6 +3,7 @@
 .print-resume {
 	@extend %flex-list;
 	flex-direction: column;
+	gap: 2vmin;
 }
 
 .resume {
@@ -17,7 +18,8 @@
 	}
 
 	h3 {
-		@include dotted-border($dark, before);
+		@include dotted-border($dark, $position: before);
+		margin-top: 0;
 	}
 }
 
