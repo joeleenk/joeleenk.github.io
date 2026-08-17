@@ -3,10 +3,12 @@ import '../styles/main.scss';
 
 export interface Props {
 	title?: string;
+	description?: string;
 }
 
 const {
 	title = 'Joeleen Kennedy | a UX-focused full-stack engineer who loves WordPress, JavaScript, HTML, CSS and Accessibility',
+	description = 'Joeleen Kennedy is a UX-focused full-stack engineer specializing in WordPress, accessibility, and enterprise-scale site architecture. Currently Senior Web Engineer at Human Made.',
 } = Astro.props;
 ---
 
@@ -21,6 +23,11 @@ const {
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<meta name="theme-color" content="#000000" />
 		<link rel="manifest" href="/manifest.json" />
+		<meta name="description" content={description} />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://joeleen.net/" />
+		<meta property="og:title" content="Joeleen Kennedy" />
+		<meta property="og:description" content={description} />
 		<title>{title}</title>
 	</head>
 	<body id="root">

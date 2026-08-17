@@ -22,16 +22,20 @@ const { projectsListData } = Astro.props;
 	{
 		projectsListData.map((project) => (
 			<li class="project">
-				<img
-					src={project.desktopImg}
-					class="project__img project__img--desktop"
-					alt=""
-				/>
-				<img
-					src={project.mobileImg}
-					class="project__img project__img--mobile"
-					alt=""
-				/>
+				{project.desktopImg && (
+					<img
+						src={project.desktopImg}
+						class="project__img project__img--desktop"
+						alt=""
+					/>
+				)}
+				{project.mobileImg && (
+					<img
+						src={project.mobileImg}
+						class="project__img project__img--mobile"
+						alt=""
+					/>
+				)}
 				<h4 class="project__name">
 					<small class="client-name">{project.clientName}</small>
 					{project.siteURL ? (

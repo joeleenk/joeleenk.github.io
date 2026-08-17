@@ -33,6 +33,11 @@
 
 	&:first-of-type {
 		border-top: 0 none;
+		margin-top: -1em;
+	}
+
+	&:last-of-type {
+		margin-bottom: -1em;
 	}
 
 	&::before {
@@ -95,14 +100,6 @@
 		&__date--full {
 			margin-bottom: 1em;
 		}
-	}
-}
-
-.education {
-	h4,
-	p {
-		line-height: 1.2;
-		margin: 0.5em;
 	}
 }
 

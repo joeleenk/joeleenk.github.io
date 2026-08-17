@@ -5,13 +5,18 @@
 		padding: 0 1%;
 
 		.print-only {
-			display: inherit;
+			display: inherit !important;
+		}
+
+		.print-hide {
+			display: none !important;
 		}
 
 		.app-main-nav,
 		h2:after,
 		.about h2,
 		.about h3,
+		.current-role,
 		.background,
 		.passions,
 		.fun-fact,
@@ -23,10 +28,10 @@
 		}
 
 		h3 {
-			margin: 2% 0;
+			margin-block: 0 3%;
 
 			&::before {
-				margin: 2% auto;
+				margin: 3% auto;
 			}
 		}
 
@@ -105,7 +110,7 @@
 
 			.mission p,
 			.skills p {
-				margin: 0 0 -0.5rem;
+				margin-block: 1em 0;
 			}
 		}
 
