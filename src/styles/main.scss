@@ -1,21 +1,17 @@
 /*
-Main sass file importing files from styles folder.
+Main sass file. Each partial declares its own module dependencies via
+`@use '../modules' as *;` — this file just loads them in cascade order.
 */
 
-/* Import from modules (colors, extends, mixins) */
-@import './modules/variables';
-@import './modules/colors';
-@import './modules/utility';
+/* Partials (styles separated by type/section) */
+@use './partials/elements';
+@use './partials/layout';
+@use './partials/header';
+@use './partials/footer';
+@use './partials/about';
+@use './partials/work';
+@use './partials/resume';
+@use './partials/classes';
 
-/* Import from partials (styles seperated by type/section) */
-@import './partials/elements';
-@import './partials/layout';
-@import './partials/header';
-@import './partials/footer';
-@import './partials/about';
-@import './partials/work';
-@import './partials/resume';
-@import './partials/classes';
-
-/* Print styles */
-@import './partials/print';
+/* Print styles (loaded last so print overrides win the cascade) */
+@use './partials/print';

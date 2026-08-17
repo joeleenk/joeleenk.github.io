@@ -1,0 +1,5 @@
+// Barrel module: re-exports colors, variables and utility so partials can
+// get everything with a single `@use '../modules' as *;`.
+@forward 'colors';
+@forward 'variables';
+@forward 'utility';

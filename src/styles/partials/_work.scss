@@ -1,6 +1,9 @@
+@use '../modules' as *;
+@use 'sass:color';
+
 /* Styles specific to the work section */
 .work {
-	background-color: scale-color(color('orange'), $lightness: 60%);
+	background-color: color.scale(color('orange'), $lightness: 60%);
 	background-image: url('../../images/noise-texture.png');
 	@include box-shadow;
 
@@ -47,7 +50,7 @@
 		&:focus:after {
 			background: rgba($light, 0.1);
 			box-shadow: 0 0 8px 0
-				rgba(scale-color(color('orange'), $lightness: -25%), 0.3);
+				rgba(color.scale(color('orange'), $lightness: -25%), 0.3);
 		}
 	}
 

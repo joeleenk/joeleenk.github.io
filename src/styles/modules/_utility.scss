@@ -1,3 +1,7 @@
+@use 'sass:map';
+@use 'sass:color';
+@use 'colors' as *;
+
 /* Extends and mixins go here */
 
 /* Create extendable styles for a flex-styled list, horizontal by default. */
@@ -39,8 +43,8 @@
 
 /* Helper function for colors list */
 @function color($key) {
-	@if map-has-key($colors, $key) {
-		@return map-get($colors, $key);
+	@if map.has-key($colors, $key) {
+		@return map.get($colors, $key);
 	}
 
 	@warn "Unknown `#{$key}` in $colors.";
@@ -49,7 +53,7 @@
 
 /* Helper function to test the darkness of a background color */
 @function set-text-color($color) {
-	@if (lightness($color) > 50) {
+	@if (color.channel($color, "lightness", $space: hsl) > 50) {
 		@return $dark; // Lighter backgorund, return dark color
 	} @else {
 		@return $light; // Darker background, return light color
@@ -69,7 +73,7 @@
 
 @mixin inset-box-shadow($color: $dark) {
 	box-shadow: inset 0 0 15px 0
-		rgba(scale-color($color, $lightness: -18%), 0.5);
+		rgba(color.scale($color, $lightness: -18%), 0.5);
 }
 
 /* Create extendable styles for a small border above/below (or, with
